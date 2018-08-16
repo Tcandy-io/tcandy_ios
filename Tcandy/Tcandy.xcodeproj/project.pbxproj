@@ -13,7 +13,19 @@
 		2A1FFF1021250D5600B7BD09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF0F21250D5600B7BD09 /* Assets.xcassets */; };
 		2A1FFF1321250D5600B7BD09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF1121250D5600B7BD09 /* LaunchScreen.storyboard */; };
 		2A1FFF1621250D5700B7BD09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF1521250D5700B7BD09 /* main.m */; };
-		2A1FFF282125188000B7BD09 /* Imgs.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF272125188000B7BD09 /* Imgs.xcassets */; };
+		2A1FFF282125188000B7BD09 /* Public.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF272125188000B7BD09 /* Public.xcassets */; };
+		2A1FFF2F2125279600B7BD09 /* TGMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF2E2125279600B7BD09 /* TGMineController.m */; };
+		2A1FFF332125638500B7BD09 /* TGMineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF322125638500B7BD09 /* TGMineHeadView.m */; };
+		2A1FFF582125640D00B7BD09 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF3A2125640D00B7BD09 /* UIImage+Color.m */; };
+		2A1FFF592125640D00B7BD09 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF3B2125640D00B7BD09 /* UIImage+Extensions.m */; };
+		2A1FFF5B2125640D00B7BD09 /* UIView+LoadXIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF3F2125640D00B7BD09 /* UIView+LoadXIBView.m */; };
+		2A1FFF5D2125640D00B7BD09 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF452125640D00B7BD09 /* UITextView+Placeholder.m */; };
+		2A1FFF5E2125640D00B7BD09 /* UIBarButtonItem+CT.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF482125640D00B7BD09 /* UIBarButtonItem+CT.m */; };
+		2A1FFF5F2125640D00B7BD09 /* NSString+RegexCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF4C2125640D00B7BD09 /* NSString+RegexCategory.m */; };
+		2A1FFF612125640D00B7BD09 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF512125640D00B7BD09 /* NSString+Size.m */; };
+		2A1FFF652125658F00B7BD09 /* TGMineHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF642125658F00B7BD09 /* TGMineHeadView.xib */; };
+		2A1FFF6B2125676100B7BD09 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF692125676000B7BD09 /* BaseTableViewController.m */; };
+		2A1FFF6E2125687B00B7BD09 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF6C2125687B00B7BD09 /* BaseNavigationController.m */; };
 		7B88AFE4709E3F5B0B5D88B9 /* libPods-Tcandy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E07777C9CD453442E000CD /* libPods-Tcandy.a */; };
 		A875F59D21251BFE00C369C6 /* TGMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A875F59C21251BFE00C369C6 /* TGMainTabBarController.m */; };
 		A875F5A021251C9200C369C6 /* TGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A875F59F21251C9200C369C6 /* TGBaseViewController.m */; };
@@ -34,7 +46,30 @@
 		2A1FFF1521250D5700B7BD09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A1FFF22212510B800B7BD09 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2A1FFF25212511CA00B7BD09 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
-		2A1FFF272125188000B7BD09 /* Imgs.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imgs.xcassets; sourceTree = "<group>"; };
+		2A1FFF272125188000B7BD09 /* Public.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Public.xcassets; sourceTree = "<group>"; };
+		2A1FFF2D2125279600B7BD09 /* TGMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMineController.h; sourceTree = "<group>"; };
+		2A1FFF2E2125279600B7BD09 /* TGMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMineController.m; sourceTree = "<group>"; };
+		2A1FFF312125638500B7BD09 /* TGMineHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMineHeadView.h; sourceTree = "<group>"; };
+		2A1FFF322125638500B7BD09 /* TGMineHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMineHeadView.m; sourceTree = "<group>"; };
+		2A1FFF382125640D00B7BD09 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		2A1FFF392125640D00B7BD09 /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		2A1FFF3A2125640D00B7BD09 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		2A1FFF3B2125640D00B7BD09 /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		2A1FFF3F2125640D00B7BD09 /* UIView+LoadXIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LoadXIBView.m"; sourceTree = "<group>"; };
+		2A1FFF432125640D00B7BD09 /* UIView+LoadXIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LoadXIBView.h"; sourceTree = "<group>"; };
+		2A1FFF452125640D00B7BD09 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		2A1FFF462125640D00B7BD09 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		2A1FFF482125640D00B7BD09 /* UIBarButtonItem+CT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CT.m"; sourceTree = "<group>"; };
+		2A1FFF492125640D00B7BD09 /* UIBarButtonItem+CT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CT.h"; sourceTree = "<group>"; };
+		2A1FFF4C2125640D00B7BD09 /* NSString+RegexCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexCategory.m"; sourceTree = "<group>"; };
+		2A1FFF4E2125640D00B7BD09 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		2A1FFF502125640D00B7BD09 /* NSString+RegexCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexCategory.h"; sourceTree = "<group>"; };
+		2A1FFF512125640D00B7BD09 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		2A1FFF642125658F00B7BD09 /* TGMineHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGMineHeadView.xib; sourceTree = "<group>"; };
+		2A1FFF692125676000B7BD09 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		2A1FFF6A2125676100B7BD09 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		2A1FFF6C2125687B00B7BD09 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		2A1FFF6D2125687B00B7BD09 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		76B80733BB5DD0F53FDA9F99 /* Pods-Tcandy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tcandy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tcandy/Pods-Tcandy.release.xcconfig"; sourceTree = "<group>"; };
 		9218FE5A3540890EBDB03EA9 /* Pods-Tcandy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tcandy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tcandy/Pods-Tcandy.debug.xcconfig"; sourceTree = "<group>"; };
 		A875F59B21251BFE00C369C6 /* TGMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMainTabBarController.h; sourceTree = "<group>"; };
@@ -93,6 +128,8 @@
 				2A1FFF23212510CA00B7BD09 /* Source(资源) */,
 				2A1FFF1F2125102900B7BD09 /* Public */,
 				2A1FFF1D21250F2300B7BD09 /* Main */,
+				2A1FFF29212526E500B7BD09 /* Mine */,
+				2A1FFF342125640D00B7BD09 /* Expand(扩展) */,
 				2A1FFF1E21250F2B00B7BD09 /* Other */,
 			);
 			path = Classes;
@@ -162,9 +199,175 @@
 		2A1FFF262125186300B7BD09 /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
-				2A1FFF272125188000B7BD09 /* Imgs.xcassets */,
+				2A1FFF272125188000B7BD09 /* Public.xcassets */,
 			);
 			path = Imgs;
+			sourceTree = "<group>";
+		};
+		2A1FFF29212526E500B7BD09 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF2B2125275800B7BD09 /* Main */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		2A1FFF2B2125275800B7BD09 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF302125550B00B7BD09 /* View */,
+				2A1FFF2C2125276600B7BD09 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2A1FFF2C2125276600B7BD09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF2D2125279600B7BD09 /* TGMineController.h */,
+				2A1FFF2E2125279600B7BD09 /* TGMineController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A1FFF302125550B00B7BD09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF312125638500B7BD09 /* TGMineHeadView.h */,
+				2A1FFF322125638500B7BD09 /* TGMineHeadView.m */,
+				2A1FFF642125658F00B7BD09 /* TGMineHeadView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A1FFF342125640D00B7BD09 /* Expand(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF352125640D00B7BD09 /* Category */,
+				2A1FFF522125640D00B7BD09 /* Other */,
+			);
+			path = "Expand(扩展)";
+			sourceTree = "<group>";
+		};
+		2A1FFF352125640D00B7BD09 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF362125640D00B7BD09 /* UIKit */,
+				2A1FFF4A2125640D00B7BD09 /* Foundation */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2A1FFF362125640D00B7BD09 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF372125640D00B7BD09 /* UIImage */,
+				2A1FFF3C2125640D00B7BD09 /* UIScrollView */,
+				2A1FFF3D2125640D00B7BD09 /* UIView */,
+				2A1FFF442125640D00B7BD09 /* UITextView */,
+				2A1FFF472125640D00B7BD09 /* UIBarButtonItem */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2A1FFF372125640D00B7BD09 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF382125640D00B7BD09 /* UIImage+Color.h */,
+				2A1FFF3A2125640D00B7BD09 /* UIImage+Color.m */,
+				2A1FFF392125640D00B7BD09 /* UIImage+Extensions.h */,
+				2A1FFF3B2125640D00B7BD09 /* UIImage+Extensions.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		2A1FFF3C2125640D00B7BD09 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		2A1FFF3D2125640D00B7BD09 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF432125640D00B7BD09 /* UIView+LoadXIBView.h */,
+				2A1FFF3F2125640D00B7BD09 /* UIView+LoadXIBView.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		2A1FFF442125640D00B7BD09 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF452125640D00B7BD09 /* UITextView+Placeholder.m */,
+				2A1FFF462125640D00B7BD09 /* UITextView+Placeholder.h */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		2A1FFF472125640D00B7BD09 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF482125640D00B7BD09 /* UIBarButtonItem+CT.m */,
+				2A1FFF492125640D00B7BD09 /* UIBarButtonItem+CT.h */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		2A1FFF4A2125640D00B7BD09 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF4B2125640D00B7BD09 /* NSString */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		2A1FFF4B2125640D00B7BD09 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF502125640D00B7BD09 /* NSString+RegexCategory.h */,
+				2A1FFF4C2125640D00B7BD09 /* NSString+RegexCategory.m */,
+				2A1FFF4E2125640D00B7BD09 /* NSString+Size.h */,
+				2A1FFF512125640D00B7BD09 /* NSString+Size.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		2A1FFF522125640D00B7BD09 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2A1FFF662125672600B7BD09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF6D2125687B00B7BD09 /* BaseNavigationController.h */,
+				2A1FFF6C2125687B00B7BD09 /* BaseNavigationController.m */,
+				2A1FFF6A2125676100B7BD09 /* BaseTableViewController.h */,
+				2A1FFF692125676000B7BD09 /* BaseTableViewController.m */,
+				A875F59E21251C9200C369C6 /* TGBaseViewController.h */,
+				A875F59F21251C9200C369C6 /* TGBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A1FFF672125673700B7BD09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A1FFF682125673D00B7BD09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A875F5A121251CEA00C369C6 /* TGBaseModel.h */,
+				A875F5A221251CEA00C369C6 /* TGBaseModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6040C6749CD8BB913A2D1263 /* Pods */ = {
@@ -186,10 +389,9 @@
 		A875F5A421251D7000C369C6 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				A875F59E21251C9200C369C6 /* TGBaseViewController.h */,
-				A875F59F21251C9200C369C6 /* TGBaseViewController.m */,
-				A875F5A121251CEA00C369C6 /* TGBaseModel.h */,
-				A875F5A221251CEA00C369C6 /* TGBaseModel.m */,
+				2A1FFF682125673D00B7BD09 /* Model */,
+				2A1FFF672125673700B7BD09 /* View */,
+				2A1FFF662125672600B7BD09 /* Controller */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -278,7 +480,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1FFF1321250D5600B7BD09 /* LaunchScreen.storyboard in Resources */,
-				2A1FFF282125188000B7BD09 /* Imgs.xcassets in Resources */,
+				2A1FFF652125658F00B7BD09 /* TGMineHeadView.xib in Resources */,
+				2A1FFF282125188000B7BD09 /* Public.xcassets in Resources */,
 				2A1FFF1021250D5600B7BD09 /* Assets.xcassets in Resources */,
 				2A1FFF0E21250D5500B7BD09 /* Main.storyboard in Resources */,
 			);
@@ -332,13 +535,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1FFF592125640D00B7BD09 /* UIImage+Extensions.m in Sources */,
+				2A1FFF332125638500B7BD09 /* TGMineHeadView.m in Sources */,
 				2A1FFF0B21250D5500B7BD09 /* ViewController.m in Sources */,
+				2A1FFF5B2125640D00B7BD09 /* UIView+LoadXIBView.m in Sources */,
 				2A1FFF1621250D5700B7BD09 /* main.m in Sources */,
 				2A1FFF0821250D5500B7BD09 /* AppDelegate.m in Sources */,
 				A875F5AC21251E5000C369C6 /* TGSaveData.m in Sources */,
+				2A1FFF612125640D00B7BD09 /* NSString+Size.m in Sources */,
 				A875F5A321251CEA00C369C6 /* TGBaseModel.m in Sources */,
+				2A1FFF2F2125279600B7BD09 /* TGMineController.m in Sources */,
+				2A1FFF6B2125676100B7BD09 /* BaseTableViewController.m in Sources */,
+				2A1FFF582125640D00B7BD09 /* UIImage+Color.m in Sources */,
 				A875F59D21251BFE00C369C6 /* TGMainTabBarController.m in Sources */,
+				2A1FFF5D2125640D00B7BD09 /* UITextView+Placeholder.m in Sources */,
+				2A1FFF6E2125687B00B7BD09 /* BaseNavigationController.m in Sources */,
+				2A1FFF5F2125640D00B7BD09 /* NSString+RegexCategory.m in Sources */,
 				A875F5A021251C9200C369C6 /* TGBaseViewController.m in Sources */,
+				2A1FFF5E2125640D00B7BD09 /* UIBarButtonItem+CT.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@
 
 #import "TGMainTabBarController.h"
 
+#import "BaseNavigationController.h"
+
 @interface TGMainTabBarController ()
 {
 
@@ -19,6 +21,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self addController:@"TGMineController" image:nil selectImage:nil];
+    [self addController:@"UIViewController" image:nil selectImage:nil];
+
+}
+
+- (void)addController:(NSString *)vcName image:(NSString *)image selectImage:(NSString *)selectImage {
+    
+    UIViewController *vc = [[NSClassFromString(vcName) alloc]init];
+    vc.tabBarItem.image = [UIImage imageNamed:image];
+    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectImage];
+    
+    BaseNavigationController *navc = [[BaseNavigationController alloc]initWithRootViewController:vc];
+    
+    [self addChildViewController:navc];
+    
 }
 
 - (void)didReceiveMemoryWarning {
