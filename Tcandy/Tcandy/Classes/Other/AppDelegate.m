@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TGMainTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    TGMainTabBarController *tabBarController = [TGMainTabBarController new];
+    self.window.rootViewController = tabBarController;
+    
     return YES;
 }
 
