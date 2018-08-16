@@ -13,6 +13,7 @@
 		2A1FFF1021250D5600B7BD09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF0F21250D5600B7BD09 /* Assets.xcassets */; };
 		2A1FFF1321250D5600B7BD09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF1121250D5600B7BD09 /* LaunchScreen.storyboard */; };
 		2A1FFF1621250D5700B7BD09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF1521250D5700B7BD09 /* main.m */; };
+		2A1FFF282125188000B7BD09 /* Imgs.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF272125188000B7BD09 /* Imgs.xcassets */; };
 		7B88AFE4709E3F5B0B5D88B9 /* libPods-Tcandy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E07777C9CD453442E000CD /* libPods-Tcandy.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		2A1FFF1521250D5700B7BD09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A1FFF22212510B800B7BD09 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2A1FFF25212511CA00B7BD09 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		2A1FFF272125188000B7BD09 /* Imgs.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imgs.xcassets; sourceTree = "<group>"; };
 		76B80733BB5DD0F53FDA9F99 /* Pods-Tcandy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tcandy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tcandy/Pods-Tcandy.release.xcconfig"; sourceTree = "<group>"; };
 		9218FE5A3540890EBDB03EA9 /* Pods-Tcandy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tcandy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tcandy/Pods-Tcandy.debug.xcconfig"; sourceTree = "<group>"; };
 		E3E07777C9CD453442E000CD /* libPods-Tcandy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tcandy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,8 +136,17 @@
 		2A1FFF23212510CA00B7BD09 /* Source(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				2A1FFF262125186300B7BD09 /* Imgs */,
 			);
 			path = "Source(资源)";
+			sourceTree = "<group>";
+		};
+		2A1FFF262125186300B7BD09 /* Imgs */ = {
+			isa = PBXGroup;
+			children = (
+				2A1FFF272125188000B7BD09 /* Imgs.xcassets */,
+			);
+			path = Imgs;
 			sourceTree = "<group>";
 		};
 		6040C6749CD8BB913A2D1263 /* Pods */ = {
@@ -215,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1FFF1321250D5600B7BD09 /* LaunchScreen.storyboard in Resources */,
+				2A1FFF282125188000B7BD09 /* Imgs.xcassets in Resources */,
 				2A1FFF1021250D5600B7BD09 /* Assets.xcassets in Resources */,
 				2A1FFF0E21250D5500B7BD09 /* Main.storyboard in Resources */,
 			);
