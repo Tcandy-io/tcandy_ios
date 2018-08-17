@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "UIView+LoadXIBView.h"
+
 @interface TGMineHeadView : UIView
 
 @end

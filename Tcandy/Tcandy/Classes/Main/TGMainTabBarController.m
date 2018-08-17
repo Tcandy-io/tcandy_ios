@@ -30,8 +30,12 @@
 - (void)addController:(NSString *)vcName image:(NSString *)image selectImage:(NSString *)selectImage {
     
     UIViewController *vc = [[NSClassFromString(vcName) alloc]init];
-    vc.tabBarItem.image = [UIImage imageNamed:image];
-    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectImage];
+    if (image != nil) {
+        vc.tabBarItem.image = [UIImage imageNamed:image];
+    }
+    if (selectImage != nil) {
+        vc.tabBarItem.selectedImage = [UIImage imageNamed:selectImage];
+    }
     
     BaseNavigationController *navc = [[BaseNavigationController alloc]initWithRootViewController:vc];
     

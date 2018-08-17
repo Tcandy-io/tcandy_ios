@@ -8,43 +8,102 @@
 
 #import "TGMineController.h"
 
+#import "TGMineHeadView.h"
+
 @interface TGMineController ()
+
+@property (nonatomic,strong) TGMineHeadView *headView;
 
 @end
 
 @implementation TGMineController
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    TGMineController *vc = [[TGMineController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+#pragma mark - Lazy
+
+- (TGMineHeadView *)headView {
+    if (_headView == nil) {
+        _headView = [TGMineHeadView loadViewFromXib_ND];
+        _headView.frame = CGRectMake(0, 0, Main_Screen_Width, 300);
+        _headView.backgroundColor = random_Color;
+    }
+    return _headView;
 }
+
+
+#pragma mark - ui
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.view.backgroundColor = random_Color;
-
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)setupUI {
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 20, 0);
+
+    self.view.backgroundColor = random_Color;
     
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
+    else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLayoutSubviews {
+//    self.tableView.frame = CGRectMake(0, 0, Main_Screen_Width, Main_Screen_Height - TabBar_HEIGHT);
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UITableViewDataSource, UITableViewDelegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
 }
-*/
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *identifier = [NSString stringWithFormat:@"%ld%ld",indexPath.section,indexPath.row];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.backgroundColor = [UIColor clearColor];
+    
+    if (indexPath.section == 0) {
+        [cell.contentView addSubview:self.headView];
+    }
+    else if (indexPath.section == 1) {
+    }
+    
+    return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section==0) {
+        return 300;
+    }
+    else {
+        return 200;
+    }
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+}
+
 
 @end

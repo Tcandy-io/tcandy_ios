@@ -6,8 +6,8 @@
 //  Copyright © 2018年 tcandy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseTableViewController.h"
 
-@interface TGMineController : UIViewController
+@interface TGMineController : BaseTableViewController
 
 @end
