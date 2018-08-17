@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0464B0AC21257793008F1404 /* TGHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464B0AB21257793008F1404 /* TGHomeController.m */; };
+		0464B0B421257B80008F1404 /* TGHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464B0B321257B80008F1404 /* TGHomeHeaderView.m */; };
+		0464B0B621257B8B008F1404 /* TGHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0464B0B521257B8B008F1404 /* TGHomeHeaderView.xib */; };
+		0464B0BB21266B5C008F1404 /* CALayer+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464B0BA21266B5C008F1404 /* CALayer+UIColor.m */; };
+		0468A6A32126B16000191A04 /* TGHomeSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6A22126B16000191A04 /* TGHomeSectionHeaderView.m */; };
+		0468A6A72126BA0300191A04 /* TGHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6A52126BA0300191A04 /* TGHomeCell.m */; };
+		0468A6A82126BA0300191A04 /* TGHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0468A6A62126BA0300191A04 /* TGHomeCell.xib */; };
+		0468A6AB2126C08000191A04 /* TGBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6AA2126C08000191A04 /* TGBaseTableViewCell.m */; };
+		0468A6AE2126C2CD00191A04 /* TGHomeSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6AD2126C2CD00191A04 /* TGHomeSearchBarView.m */; };
+		0468A6B12126D25600191A04 /* TGHomeSelectShopsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6B02126D25600191A04 /* TGHomeSelectShopsView.m */; };
 		2A1FFF0821250D5500B7BD09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF0721250D5500B7BD09 /* AppDelegate.m */; };
 		2A1FFF0B21250D5500B7BD09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF0A21250D5500B7BD09 /* ViewController.m */; };
 		2A1FFF0E21250D5500B7BD09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF0C21250D5500B7BD09 /* Main.storyboard */; };
@@ -34,6 +44,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0464B0AA21257793008F1404 /* TGHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeController.h; sourceTree = "<group>"; };
+		0464B0AB21257793008F1404 /* TGHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHomeController.m; sourceTree = "<group>"; };
+		0464B0B221257B80008F1404 /* TGHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeHeaderView.h; sourceTree = "<group>"; };
+		0464B0B321257B80008F1404 /* TGHomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHomeHeaderView.m; sourceTree = "<group>"; };
+		0464B0B521257B8B008F1404 /* TGHomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGHomeHeaderView.xib; sourceTree = "<group>"; };
+		0464B0B921266B5C008F1404 /* CALayer+UIColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+UIColor.h"; sourceTree = "<group>"; };
+		0464B0BA21266B5C008F1404 /* CALayer+UIColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+UIColor.m"; sourceTree = "<group>"; };
+		0468A6A02126AFA500191A04 /* TGConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGConfigure.h; sourceTree = "<group>"; };
+		0468A6A12126B16000191A04 /* TGHomeSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeSectionHeaderView.h; sourceTree = "<group>"; };
+		0468A6A22126B16000191A04 /* TGHomeSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHomeSectionHeaderView.m; sourceTree = "<group>"; };
+		0468A6A42126BA0300191A04 /* TGHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeCell.h; sourceTree = "<group>"; };
+		0468A6A52126BA0300191A04 /* TGHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHomeCell.m; sourceTree = "<group>"; };
+		0468A6A62126BA0300191A04 /* TGHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGHomeCell.xib; sourceTree = "<group>"; };
+		0468A6A92126C08000191A04 /* TGBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TGBaseTableViewCell.h; path = Tcandy/Classes/Home/View/TGBaseTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		0468A6AA2126C08000191A04 /* TGBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TGBaseTableViewCell.m; path = Tcandy/Classes/Home/View/TGBaseTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		0468A6AC2126C2CD00191A04 /* TGHomeSearchBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeSearchBarView.h; sourceTree = "<group>"; };
+		0468A6AD2126C2CD00191A04 /* TGHomeSearchBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHomeSearchBarView.m; sourceTree = "<group>"; };
+		0468A6AF2126D25600191A04 /* TGHomeSelectShopsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeSelectShopsView.h; sourceTree = "<group>"; };
+		0468A6B02126D25600191A04 /* TGHomeSelectShopsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHomeSelectShopsView.m; sourceTree = "<group>"; };
 		2A1FFF0321250D5500B7BD09 /* Tcandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tcandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1FFF0621250D5500B7BD09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A1FFF0721250D5500B7BD09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +124,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0464B0A7212576EF008F1404 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0464B0AA21257793008F1404 /* TGHomeController.h */,
+				0464B0AB21257793008F1404 /* TGHomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0464B0A821257705008F1404 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0464B0B221257B80008F1404 /* TGHomeHeaderView.h */,
+				0464B0B321257B80008F1404 /* TGHomeHeaderView.m */,
+				0464B0B521257B8B008F1404 /* TGHomeHeaderView.xib */,
+				0468A6A12126B16000191A04 /* TGHomeSectionHeaderView.h */,
+				0468A6A22126B16000191A04 /* TGHomeSectionHeaderView.m */,
+				0468A6A42126BA0300191A04 /* TGHomeCell.h */,
+				0468A6A52126BA0300191A04 /* TGHomeCell.m */,
+				0468A6A62126BA0300191A04 /* TGHomeCell.xib */,
+				0468A6AC2126C2CD00191A04 /* TGHomeSearchBarView.h */,
+				0468A6AD2126C2CD00191A04 /* TGHomeSearchBarView.m */,
+				0468A6AF2126D25600191A04 /* TGHomeSelectShopsView.h */,
+				0468A6B02126D25600191A04 /* TGHomeSelectShopsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0464B0A921257719008F1404 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0464B0B821266B14008F1404 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				0464B0B921266B5C008F1404 /* CALayer+UIColor.h */,
+				0464B0BA21266B5C008F1404 /* CALayer+UIColor.m */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
 		2A1FFEFA21250D5500B7BD09 = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +334,7 @@
 		2A1FFF362125640D00B7BD09 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0464B0B821266B14008F1404 /* CALayer */,
 				2A1FFF372125640D00B7BD09 /* UIImage */,
 				2A1FFF3C2125640D00B7BD09 /* UIScrollView */,
 				2A1FFF3D2125640D00B7BD09 /* UIView */,
@@ -357,6 +431,8 @@
 		2A1FFF672125673700B7BD09 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0468A6A92126C08000191A04 /* TGBaseTableViewCell.h */,
+				0468A6AA2126C08000191A04 /* TGBaseTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +458,10 @@
 		A875F59A21251B2A00C369C6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0464B0A921257719008F1404 /* Model */,
+				0464B0A821257705008F1404 /* View */,
+				0464B0A7212576EF008F1404 /* Controller */,
+				0468A6A02126AFA500191A04 /* TGConfigure.h */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -484,6 +564,8 @@
 				2A1FFF282125188000B7BD09 /* Public.xcassets in Resources */,
 				2A1FFF1021250D5600B7BD09 /* Assets.xcassets in Resources */,
 				2A1FFF0E21250D5500B7BD09 /* Main.storyboard in Resources */,
+				0468A6A82126BA0300191A04 /* TGHomeCell.xib in Resources */,
+				0464B0B621257B8B008F1404 /* TGHomeHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +619,7 @@
 			files = (
 				2A1FFF592125640D00B7BD09 /* UIImage+Extensions.m in Sources */,
 				2A1FFF332125638500B7BD09 /* TGMineHeadView.m in Sources */,
+				0468A6B12126D25600191A04 /* TGHomeSelectShopsView.m in Sources */,
 				2A1FFF0B21250D5500B7BD09 /* ViewController.m in Sources */,
 				2A1FFF5B2125640D00B7BD09 /* UIView+LoadXIBView.m in Sources */,
 				2A1FFF1621250D5700B7BD09 /* main.m in Sources */,
@@ -544,15 +627,22 @@
 				A875F5AC21251E5000C369C6 /* TGSaveData.m in Sources */,
 				2A1FFF612125640D00B7BD09 /* NSString+Size.m in Sources */,
 				A875F5A321251CEA00C369C6 /* TGBaseModel.m in Sources */,
+				0468A6AB2126C08000191A04 /* TGBaseTableViewCell.m in Sources */,
 				2A1FFF2F2125279600B7BD09 /* TGMineController.m in Sources */,
 				2A1FFF6B2125676100B7BD09 /* BaseTableViewController.m in Sources */,
+				0468A6AE2126C2CD00191A04 /* TGHomeSearchBarView.m in Sources */,
 				2A1FFF582125640D00B7BD09 /* UIImage+Color.m in Sources */,
 				A875F59D21251BFE00C369C6 /* TGMainTabBarController.m in Sources */,
+				0464B0AC21257793008F1404 /* TGHomeController.m in Sources */,
 				2A1FFF5D2125640D00B7BD09 /* UITextView+Placeholder.m in Sources */,
 				2A1FFF6E2125687B00B7BD09 /* BaseNavigationController.m in Sources */,
 				2A1FFF5F2125640D00B7BD09 /* NSString+RegexCategory.m in Sources */,
+				0464B0B421257B80008F1404 /* TGHomeHeaderView.m in Sources */,
+				0468A6A72126BA0300191A04 /* TGHomeCell.m in Sources */,
 				A875F5A021251C9200C369C6 /* TGBaseViewController.m in Sources */,
 				2A1FFF5E2125640D00B7BD09 /* UIBarButtonItem+CT.m in Sources */,
+				0464B0BB21266B5C008F1404 /* CALayer+UIColor.m in Sources */,
+				0468A6A32126B16000191A04 /* TGHomeSectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

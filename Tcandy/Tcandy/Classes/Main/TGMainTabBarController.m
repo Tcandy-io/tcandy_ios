@@ -7,7 +7,6 @@
 //
 
 #import "TGMainTabBarController.h"
-
 #import "BaseNavigationController.h"
 
 @interface TGMainTabBarController ()
@@ -23,7 +22,7 @@
     // Do any additional setup after loading the view.
     
     [self addController:@"TGMineController" image:nil selectImage:nil];
-    [self addController:@"UIViewController" image:nil selectImage:nil];
+    [self addController:@"TGHomeController" image:nil selectImage:nil];
 
 }
 
