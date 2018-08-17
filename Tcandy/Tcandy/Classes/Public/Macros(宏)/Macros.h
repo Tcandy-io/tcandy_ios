@@ -34,5 +34,6 @@
 #define kIOSIphoneX  ((Main_Screen_Height == 812.0) ? YES : NO)
 #define kStatusBarHeight (kIOSIphoneX ? 44.0:20.0)
 //背景颜色
-#define kBackgroundColor [UIColor colorWithRed:245/255.0f green:245/255.0f blue:245/255.0f alpha:a]
+#define kBackgroundColor [UIColor colorWithRed:245/255.0f green:245/255.0f blue:245/255.0f alpha:1]
+
 #endif /* Macros_h */
