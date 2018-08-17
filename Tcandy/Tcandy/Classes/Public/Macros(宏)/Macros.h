@@ -30,6 +30,9 @@
 
 #define random_Color RGB(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
-
-
+//状态栏高度
+#define kIOSIphoneX  ((Main_Screen_Height == 812.0) ? YES : NO)
+#define kStatusBarHeight (kIOSIphoneX ? 44.0:20.0)
+//背景颜色
+#define kBackgroundColor [UIColor colorWithRed:245/255.0f green:245/255.0f blue:245/255.0f alpha:a]
 #endif /* Macros_h */

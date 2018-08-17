@@ -14,9 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - IQKeyboardManager (6.1.1)
+  - IQKeyboardManager (6.0.4)
   - Masonry (1.1.0)
-  - MJExtension (3.0.15.1)
+  - MJExtension (3.0.15)
   - MJRefresh (3.1.15.3)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -27,9 +27,9 @@ PODS:
     - ReactiveCocoa/Core
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -54,13 +54,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
+  IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJExtension: 3f039575db1b135a20699ad298713b26acec1528
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
 
 PODFILE CHECKSUM: 320caa540e853f6f1ce8c1e2f492e0e15b8ad2d4
 
