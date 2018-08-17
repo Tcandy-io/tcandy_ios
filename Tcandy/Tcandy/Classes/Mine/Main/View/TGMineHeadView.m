@@ -10,6 +10,7 @@
 
 @interface TGMineHeadView ()
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewHL;
 
 
 @end
@@ -19,6 +20,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
+    self.viewHL.constant = NAVI_HEIGHT;
     
 }
 

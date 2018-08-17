@@ -36,6 +36,10 @@
 		2A1FFF652125658F00B7BD09 /* TGMineHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF642125658F00B7BD09 /* TGMineHeadView.xib */; };
 		2A1FFF6B2125676100B7BD09 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF692125676000B7BD09 /* BaseTableViewController.m */; };
 		2A1FFF6E2125687B00B7BD09 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF6C2125687B00B7BD09 /* BaseNavigationController.m */; };
+		2A537ADE212677680018F5DF /* TGMineInvitationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537ADD212677680018F5DF /* TGMineInvitationView.m */; };
+		2A537AE12126A62F0018F5DF /* TGMWalletOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE02126A62F0018F5DF /* TGMWalletOrderView.m */; };
+		2A537AE42126A6640018F5DF /* TGMOrdeListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE32126A6640018F5DF /* TGMOrdeListView.m */; };
+		2A537AE72126A69E0018F5DF /* TGMUpdateOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE62126A69E0018F5DF /* TGMUpdateOrderView.m */; };
 		7B88AFE4709E3F5B0B5D88B9 /* libPods-Tcandy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E07777C9CD453442E000CD /* libPods-Tcandy.a */; };
 		A875F59D21251BFE00C369C6 /* TGMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A875F59C21251BFE00C369C6 /* TGMainTabBarController.m */; };
 		A875F5A021251C9200C369C6 /* TGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A875F59F21251C9200C369C6 /* TGBaseViewController.m */; };
@@ -99,6 +103,14 @@
 		2A1FFF6A2125676100B7BD09 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		2A1FFF6C2125687B00B7BD09 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		2A1FFF6D2125687B00B7BD09 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		2A537ADC212677680018F5DF /* TGMineInvitationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMineInvitationView.h; sourceTree = "<group>"; };
+		2A537ADD212677680018F5DF /* TGMineInvitationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMineInvitationView.m; sourceTree = "<group>"; };
+		2A537ADF2126A62F0018F5DF /* TGMWalletOrderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMWalletOrderView.h; sourceTree = "<group>"; };
+		2A537AE02126A62F0018F5DF /* TGMWalletOrderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMWalletOrderView.m; sourceTree = "<group>"; };
+		2A537AE22126A6640018F5DF /* TGMOrdeListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMOrdeListView.h; sourceTree = "<group>"; };
+		2A537AE32126A6640018F5DF /* TGMOrdeListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMOrdeListView.m; sourceTree = "<group>"; };
+		2A537AE52126A69E0018F5DF /* TGMUpdateOrderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMUpdateOrderView.h; sourceTree = "<group>"; };
+		2A537AE62126A69E0018F5DF /* TGMUpdateOrderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMUpdateOrderView.m; sourceTree = "<group>"; };
 		76B80733BB5DD0F53FDA9F99 /* Pods-Tcandy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tcandy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tcandy/Pods-Tcandy.release.xcconfig"; sourceTree = "<group>"; };
 		9218FE5A3540890EBDB03EA9 /* Pods-Tcandy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tcandy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tcandy/Pods-Tcandy.debug.xcconfig"; sourceTree = "<group>"; };
 		A875F59B21251BFE00C369C6 /* TGMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMainTabBarController.h; sourceTree = "<group>"; };
@@ -309,6 +321,14 @@
 				2A1FFF312125638500B7BD09 /* TGMineHeadView.h */,
 				2A1FFF322125638500B7BD09 /* TGMineHeadView.m */,
 				2A1FFF642125658F00B7BD09 /* TGMineHeadView.xib */,
+				2A537ADC212677680018F5DF /* TGMineInvitationView.h */,
+				2A537ADD212677680018F5DF /* TGMineInvitationView.m */,
+				2A537ADF2126A62F0018F5DF /* TGMWalletOrderView.h */,
+				2A537AE02126A62F0018F5DF /* TGMWalletOrderView.m */,
+				2A537AE22126A6640018F5DF /* TGMOrdeListView.h */,
+				2A537AE32126A6640018F5DF /* TGMOrdeListView.m */,
+				2A537AE52126A69E0018F5DF /* TGMUpdateOrderView.h */,
+				2A537AE62126A69E0018F5DF /* TGMUpdateOrderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -621,6 +641,8 @@
 				2A1FFF332125638500B7BD09 /* TGMineHeadView.m in Sources */,
 				0468A6B12126D25600191A04 /* TGHomeSelectShopsView.m in Sources */,
 				2A1FFF0B21250D5500B7BD09 /* ViewController.m in Sources */,
+				2A537AE72126A69E0018F5DF /* TGMUpdateOrderView.m in Sources */,
+				2A537AE12126A62F0018F5DF /* TGMWalletOrderView.m in Sources */,
 				2A1FFF5B2125640D00B7BD09 /* UIView+LoadXIBView.m in Sources */,
 				2A1FFF1621250D5700B7BD09 /* main.m in Sources */,
 				2A1FFF0821250D5500B7BD09 /* AppDelegate.m in Sources */,
