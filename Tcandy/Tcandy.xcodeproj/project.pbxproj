@@ -17,6 +17,8 @@
 		0468A6AB2126C08000191A04 /* TGBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6AA2126C08000191A04 /* TGBaseTableViewCell.m */; };
 		0468A6AE2126C2CD00191A04 /* TGHomeSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6AD2126C2CD00191A04 /* TGHomeSearchBarView.m */; };
 		0468A6B12126D25600191A04 /* TGHomeSelectShopsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6B02126D25600191A04 /* TGHomeSelectShopsView.m */; };
+		04F6DFF92126D8730014AC07 /* TGMineInvitationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537ADD212677680018F5DF /* TGMineInvitationView.m */; };
+		04F6DFFA2126D8730014AC07 /* TGMOrdeListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE32126A6640018F5DF /* TGMOrdeListView.m */; };
 		2A1FFF0821250D5500B7BD09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF0721250D5500B7BD09 /* AppDelegate.m */; };
 		2A1FFF0B21250D5500B7BD09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF0A21250D5500B7BD09 /* ViewController.m */; };
 		2A1FFF0E21250D5500B7BD09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF0C21250D5500B7BD09 /* Main.storyboard */; };
@@ -36,9 +38,7 @@
 		2A1FFF652125658F00B7BD09 /* TGMineHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FFF642125658F00B7BD09 /* TGMineHeadView.xib */; };
 		2A1FFF6B2125676100B7BD09 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF692125676000B7BD09 /* BaseTableViewController.m */; };
 		2A1FFF6E2125687B00B7BD09 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF6C2125687B00B7BD09 /* BaseNavigationController.m */; };
-		2A537ADE212677680018F5DF /* TGMineInvitationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537ADD212677680018F5DF /* TGMineInvitationView.m */; };
 		2A537AE12126A62F0018F5DF /* TGMWalletOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE02126A62F0018F5DF /* TGMWalletOrderView.m */; };
-		2A537AE42126A6640018F5DF /* TGMOrdeListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE32126A6640018F5DF /* TGMOrdeListView.m */; };
 		2A537AE72126A69E0018F5DF /* TGMUpdateOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE62126A69E0018F5DF /* TGMUpdateOrderView.m */; };
 		7B88AFE4709E3F5B0B5D88B9 /* libPods-Tcandy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E07777C9CD453442E000CD /* libPods-Tcandy.a */; };
 		A875F59D21251BFE00C369C6 /* TGMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A875F59C21251BFE00C369C6 /* TGMainTabBarController.m */; };
@@ -637,6 +637,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F6DFF92126D8730014AC07 /* TGMineInvitationView.m in Sources */,
+				04F6DFFA2126D8730014AC07 /* TGMOrdeListView.m in Sources */,
 				2A1FFF592125640D00B7BD09 /* UIImage+Extensions.m in Sources */,
 				2A1FFF332125638500B7BD09 /* TGMineHeadView.m in Sources */,
 				0468A6B12126D25600191A04 /* TGHomeSelectShopsView.m in Sources */,
