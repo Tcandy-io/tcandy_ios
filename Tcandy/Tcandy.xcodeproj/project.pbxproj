@@ -79,6 +79,7 @@
 		04899520212A67A800F912F9 /* TGHomeSelectShopKindsCRView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGHomeSelectShopKindsCRView.xib; sourceTree = "<group>"; };
 		04899523212A905F00F912F9 /* TGNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TGNetwork.h; path = Tcandy/Classes/Home/View/TGNetwork.h; sourceTree = SOURCE_ROOT; };
 		04899524212A905F00F912F9 /* TGNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TGNetwork.m; path = Tcandy/Classes/Home/View/TGNetwork.m; sourceTree = SOURCE_ROOT; };
+		04899526212AB36900F912F9 /* TGUrlsConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TGUrlsConfigure.h; path = Tcandy/Classes/Home/View/TGUrlsConfigure.h; sourceTree = SOURCE_ROOT; };
 		2A1FFF0321250D5500B7BD09 /* Tcandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tcandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1FFF0621250D5500B7BD09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A1FFF0721250D5500B7BD09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -562,6 +563,7 @@
 			children = (
 				04899523212A905F00F912F9 /* TGNetwork.h */,
 				04899524212A905F00F912F9 /* TGNetwork.m */,
+				04899526212AB36900F912F9 /* TGUrlsConfigure.h */,
 			);
 			path = Network;
 			sourceTree = "<group>";
