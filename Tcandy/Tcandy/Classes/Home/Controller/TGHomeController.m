@@ -11,11 +11,17 @@
 #import "TGHomeSectionHeaderView.h"
 #import "TGHomeCell.h"
 #import "TGHomeSearchBarView.h"
+#import "TGHomeSelectShopKindsView.h"
+
+#import "TGNetwork.h"
+#define  kHomeTableViewHeader_H  450
+
 @interface TGHomeController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong) UITableView *m_tableView;
 @property(nonatomic,strong) UIView *m_headerView;
 @property(nonatomic,strong) UIView *m_searchView;
+@property(nonatomic,strong) TGHomeSelectShopKindsView *m_shopKindsView;
 @end
 
 @implementation TGHomeController
@@ -29,8 +35,12 @@
     [self createTableViewCell];
     
     _m_searchView = [self createSearchBarView];
-    
+    _m_shopKindsView = [self createShopKindsView];
     self.navigationController.navigationBarHidden = YES;
+    
+    [[TGNetwork shareWNetwork]httpPostPath:@"?act=api&ctrl=getpic" paras:@{@"act":@"api",@"ctrl":@"getpic"} complete:^(ResponseStatus status, NSInteger code, id  _Nullable response) {
+        
+    }];
 }
 //创建tableView
 -(UITableView*)createTableView{
@@ -49,7 +59,7 @@
 }
 //创建tableviewHeaderView
 -(UIView*)createTableViewHeaderView{
-    UIView *lheaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 450)];
+    UIView *lheaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Main_Screen_Width, kHomeTableViewHeader_H)];
     TGHomeHeaderView *ltgheaderView = [[[NSBundle mainBundle]loadNibNamed:@"TGHomeHeaderView" owner:self options:nil] firstObject];
     ltgheaderView.frame = lheaderView.frame;
     [lheaderView addSubview:ltgheaderView];
@@ -71,6 +81,13 @@
     lsearchView.backgroundColor = UIColor.clearColor;
     [self.view addSubview:lsearchView];
     return lsearchView;
+}
+//商品种类
+-(TGHomeSelectShopKindsView*)createShopKindsView{
+    TGHomeSelectShopKindsView *lshopKindsView = [[TGHomeSelectShopKindsView alloc]initWithFrame:CGRectMake(0, 80, Main_Screen_Width, 50)];
+    [self.view addSubview:lshopKindsView];
+    lshopKindsView.hidden = YES;
+    return lshopKindsView;
 }
 
 #pragma mark -- tableview delegate and datasource
@@ -103,6 +120,12 @@
         alpha = 1.0;
     }else{
         _m_searchView.backgroundColor = RGBA(235, 35, 123, alpha);
+    }
+    //
+    if (kHomeTableViewHeader_H < scrollView.contentOffset.y) {
+         _m_shopKindsView.hidden = NO;
+    } else {
+         _m_shopKindsView.hidden = YES;
     }
     
 }
