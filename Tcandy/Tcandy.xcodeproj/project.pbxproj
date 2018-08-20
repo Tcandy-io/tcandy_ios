@@ -47,6 +47,7 @@
 		2A6BA318212A978000D4B624 /* TGMineSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA317212A978000D4B624 /* TGMineSettingController.m */; };
 		2A6BA31C212A9E8F00D4B624 /* TGMineSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA31A212A9E8F00D4B624 /* TGMineSettingCell.m */; };
 		2A6BA31D212A9E8F00D4B624 /* TGMineSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A6BA31B212A9E8F00D4B624 /* TGMineSettingCell.xib */; };
+		2A6BA322212AB17F00D4B624 /* TGMinePersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA321212AB17F00D4B624 /* TGMinePersonalController.m */; };
 		7B88AFE4709E3F5B0B5D88B9 /* libPods-Tcandy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E07777C9CD453442E000CD /* libPods-Tcandy.a */; };
 		A875F59D21251BFE00C369C6 /* TGMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A875F59C21251BFE00C369C6 /* TGMainTabBarController.m */; };
 		A875F5A021251C9200C369C6 /* TGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A875F59F21251C9200C369C6 /* TGBaseViewController.m */; };
@@ -130,6 +131,8 @@
 		2A6BA319212A9E8F00D4B624 /* TGMineSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMineSettingCell.h; sourceTree = "<group>"; };
 		2A6BA31A212A9E8F00D4B624 /* TGMineSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMineSettingCell.m; sourceTree = "<group>"; };
 		2A6BA31B212A9E8F00D4B624 /* TGMineSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGMineSettingCell.xib; sourceTree = "<group>"; };
+		2A6BA320212AB17F00D4B624 /* TGMinePersonalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMinePersonalController.h; sourceTree = "<group>"; };
+		2A6BA321212AB17F00D4B624 /* TGMinePersonalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMinePersonalController.m; sourceTree = "<group>"; };
 		76B80733BB5DD0F53FDA9F99 /* Pods-Tcandy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tcandy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tcandy/Pods-Tcandy.release.xcconfig"; sourceTree = "<group>"; };
 		9218FE5A3540890EBDB03EA9 /* Pods-Tcandy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tcandy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tcandy/Pods-Tcandy.debug.xcconfig"; sourceTree = "<group>"; };
 		A875F59B21251BFE00C369C6 /* TGMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMainTabBarController.h; sourceTree = "<group>"; };
@@ -504,6 +507,8 @@
 		2A6BA313212A95AB00D4B624 /* Personal */ = {
 			isa = PBXGroup;
 			children = (
+				2A6BA31F212AB13B00D4B624 /* View */,
+				2A6BA31E212AB13700D4B624 /* Controller */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -523,6 +528,22 @@
 				2A6BA319212A9E8F00D4B624 /* TGMineSettingCell.h */,
 				2A6BA31A212A9E8F00D4B624 /* TGMineSettingCell.m */,
 				2A6BA31B212A9E8F00D4B624 /* TGMineSettingCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A6BA31E212AB13700D4B624 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A6BA320212AB17F00D4B624 /* TGMinePersonalController.h */,
+				2A6BA321212AB17F00D4B624 /* TGMinePersonalController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A6BA31F212AB13B00D4B624 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -715,6 +736,7 @@
 				2A1FFF1621250D5700B7BD09 /* main.m in Sources */,
 				2A1FFF0821250D5500B7BD09 /* AppDelegate.m in Sources */,
 				04899525212A905F00F912F9 /* TGNetwork.m in Sources */,
+				2A6BA322212AB17F00D4B624 /* TGMinePersonalController.m in Sources */,
 				A875F5AC21251E5000C369C6 /* TGSaveData.m in Sources */,
 				2A1FFF612125640D00B7BD09 /* NSString+Size.m in Sources */,
 				A875F5A321251CEA00C369C6 /* TGBaseModel.m in Sources */,

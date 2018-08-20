@@ -6,17 +6,17 @@
 //  Copyright © 2018年 tcandy. All rights reserved.
 //
 
-#import "TGMineSettingController.h"
+#import "TGMinePersonalController.h"
 
 #import "TGMineSettingCell.h"
 
 #define KTGMineSettingCellID @"KTGMineSettingCellID"
 
-@interface TGMineSettingController ()
+@interface TGMinePersonalController ()
 
 @end
 
-@implementation TGMineSettingController
+@implementation TGMinePersonalController
 
 #pragma mark - ui
 
@@ -29,13 +29,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    
 }
 
 - (void)setupUI {
     self.view.backgroundColor = kBackgroundColor;
     
-    self.navigationItem.title = @"设置";
+    self.navigationItem.title = @"个人资料";
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TGMineSettingCell class]) bundle:nil] forCellReuseIdentifier:KTGMineSettingCellID];
@@ -58,7 +58,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     TGMineSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:KTGMineSettingCellID forIndexPath:indexPath];
-
+    
     if (indexPath.section == 0) {
         cell.imgStr = @"set_service";
         cell.nameStr = @"帮助与客服";

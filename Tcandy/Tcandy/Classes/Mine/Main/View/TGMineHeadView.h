@@ -14,5 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *settingBtn;
 
+@property (weak, nonatomic) IBOutlet UIButton *headBtn;
 
 @end

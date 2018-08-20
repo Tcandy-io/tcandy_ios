@@ -15,6 +15,7 @@
 #import "TGMUpdateOrderView.h"
 #import "TGMHelpOrderView.h"
 
+#import "TGMinePersonalController.h"
 #import "TGMineSettingController.h"
 
 #define KOrderHeight 60
@@ -76,6 +77,7 @@
         _headView = [TGMineHeadView loadViewFromXib_ND];
         _headView.frame = CGRectMake(0, 0, Main_Screen_Width, 300);
         [_headView.settingBtn addTarget:self action:@selector(goToSetting) forControlEvents:UIControlEventTouchUpInside];
+        [_headView.headBtn addTarget:self action:@selector(goToPersonalController) forControlEvents:UIControlEventTouchUpInside];
     }
     return _headView;
 }
@@ -117,6 +119,11 @@
 }
 
 #pragma mark - method
+
+- (void)goToPersonalController {
+    TGMinePersonalController *vc = [[TGMinePersonalController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)goToSetting {
     TGMineSettingController *vc = [[TGMineSettingController alloc]init];
