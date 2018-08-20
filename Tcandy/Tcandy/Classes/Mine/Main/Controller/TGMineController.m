@@ -13,6 +13,9 @@
 #import "TGMWalletOrderView.h"
 #import "TGMOrdeListView.h"
 #import "TGMUpdateOrderView.h"
+#import "TGMHelpOrderView.h"
+
+#import "TGMineSettingController.h"
 
 #define KOrderHeight 60
 
@@ -23,12 +26,22 @@
 @property (nonatomic,strong) TGMWalletOrderView *walletView;
 @property (nonatomic,strong) TGMOrdeListView *orderView;
 @property (nonatomic,strong) TGMUpdateOrderView *updateView;
+@property (nonatomic,strong) TGMHelpOrderView *helpView;
+
+@property (nonatomic,assign) BOOL isLogIn;
 
 @end
 
 @implementation TGMineController
 
 #pragma mark - Lazy
+
+- (TGMHelpOrderView *)helpView {
+    if (_helpView == nil) {
+        _helpView = [[TGMHelpOrderView alloc]initWithFrame:CGRectMake(10, 0, Main_Screen_Width - 20, KOrderHeight + 300)];
+    }
+    return _helpView;
+}
 
 - (TGMUpdateOrderView *)updateView {
     if (_updateView == nil) {
@@ -62,6 +75,7 @@
     if (_headView == nil) {
         _headView = [TGMineHeadView loadViewFromXib_ND];
         _headView.frame = CGRectMake(0, 0, Main_Screen_Width, 300);
+        [_headView.settingBtn addTarget:self action:@selector(goToSetting) forControlEvents:UIControlEventTouchUpInside];
     }
     return _headView;
 }
@@ -79,11 +93,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.isLogIn = YES;
 }
 
 - (void)setupUI {
     self.tableView.bounces = NO;
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 20, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
 
     self.view.backgroundColor = kBackgroundColor;
     
@@ -100,10 +116,17 @@
     self.tableView.frame = CGRectMake(0, 0, Main_Screen_Width, Main_Screen_Height - TabBar_HEIGHT);
 }
 
+#pragma mark - method
+
+- (void)goToSetting {
+    TGMineSettingController *vc = [[TGMineSettingController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 5;
+    return 6;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -134,6 +157,11 @@
     else if (indexPath.section == 4) {
         [cell.contentView addSubview:self.updateView];
     }
+    else {
+        if (self.isLogIn) {
+            [cell.contentView addSubview:self.helpView];
+        }
+    }
     return cell;
 }
 
@@ -150,6 +178,9 @@
     }
     else if (indexPath.section == 3) {
         return KOrderHeight + 120;
+    }
+    else if (indexPath.section == 5) {
+        return KOrderHeight + 300;
     }
     else {
         return 200;
