@@ -14,12 +14,13 @@
 		0468A6A32126B16000191A04 /* TGHomeSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6A22126B16000191A04 /* TGHomeSectionHeaderView.m */; };
 		0468A6A72126BA0300191A04 /* TGHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6A52126BA0300191A04 /* TGHomeCell.m */; };
 		0468A6A82126BA0300191A04 /* TGHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0468A6A62126BA0300191A04 /* TGHomeCell.xib */; };
-		0468A6AB2126C08000191A04 /* TGBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6AA2126C08000191A04 /* TGBaseTableViewCell.m */; };
 		0468A6AE2126C2CD00191A04 /* TGHomeSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6AD2126C2CD00191A04 /* TGHomeSearchBarView.m */; };
 		0468A6B12126D25600191A04 /* TGHomeSelectShopKindsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468A6B02126D25600191A04 /* TGHomeSelectShopKindsView.m */; };
 		04899521212A67A800F912F9 /* TGHomeSelectShopKindsCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0489951F212A67A800F912F9 /* TGHomeSelectShopKindsCRView.m */; };
 		04899522212A67A800F912F9 /* TGHomeSelectShopKindsCRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04899520212A67A800F912F9 /* TGHomeSelectShopKindsCRView.xib */; };
-		04899525212A905F00F912F9 /* TGNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 04899524212A905F00F912F9 /* TGNetwork.m */; };
+		04899536212AB94400F912F9 /* TGNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 04899533212AB94400F912F9 /* TGNetwork.m */; };
+		04899537212AB94400F912F9 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 04899534212AB94400F912F9 /* NullSafe.m */; };
+		0489953D212AB9AC00F912F9 /* TGBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0489953C212AB9AC00F912F9 /* TGBaseTableViewCell.m */; };
 		04F6DFF92126D8730014AC07 /* TGMineInvitationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537ADD212677680018F5DF /* TGMineInvitationView.m */; };
 		04F6DFFA2126D8730014AC07 /* TGMOrdeListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE32126A6640018F5DF /* TGMOrdeListView.m */; };
 		2A1FFF0821250D5500B7BD09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF0721250D5500B7BD09 /* AppDelegate.m */; };
@@ -68,8 +69,6 @@
 		0468A6A42126BA0300191A04 /* TGHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeCell.h; sourceTree = "<group>"; };
 		0468A6A52126BA0300191A04 /* TGHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHomeCell.m; sourceTree = "<group>"; };
 		0468A6A62126BA0300191A04 /* TGHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGHomeCell.xib; sourceTree = "<group>"; };
-		0468A6A92126C08000191A04 /* TGBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TGBaseTableViewCell.h; path = Tcandy/Classes/Home/View/TGBaseTableViewCell.h; sourceTree = SOURCE_ROOT; };
-		0468A6AA2126C08000191A04 /* TGBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TGBaseTableViewCell.m; path = Tcandy/Classes/Home/View/TGBaseTableViewCell.m; sourceTree = SOURCE_ROOT; };
 		0468A6AC2126C2CD00191A04 /* TGHomeSearchBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeSearchBarView.h; sourceTree = "<group>"; };
 		0468A6AD2126C2CD00191A04 /* TGHomeSearchBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHomeSearchBarView.m; sourceTree = "<group>"; };
 		0468A6AF2126D25600191A04 /* TGHomeSelectShopKindsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeSelectShopKindsView.h; sourceTree = "<group>"; };
@@ -77,9 +76,12 @@
 		0489951E212A67A800F912F9 /* TGHomeSelectShopKindsCRView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeSelectShopKindsCRView.h; sourceTree = "<group>"; };
 		0489951F212A67A800F912F9 /* TGHomeSelectShopKindsCRView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHomeSelectShopKindsCRView.m; sourceTree = "<group>"; };
 		04899520212A67A800F912F9 /* TGHomeSelectShopKindsCRView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGHomeSelectShopKindsCRView.xib; sourceTree = "<group>"; };
-		04899523212A905F00F912F9 /* TGNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TGNetwork.h; path = Tcandy/Classes/Home/View/TGNetwork.h; sourceTree = SOURCE_ROOT; };
-		04899524212A905F00F912F9 /* TGNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TGNetwork.m; path = Tcandy/Classes/Home/View/TGNetwork.m; sourceTree = SOURCE_ROOT; };
-		04899526212AB36900F912F9 /* TGUrlsConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TGUrlsConfigure.h; path = Tcandy/Classes/Home/View/TGUrlsConfigure.h; sourceTree = SOURCE_ROOT; };
+		04899532212AB94400F912F9 /* TGUrlsConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGUrlsConfigure.h; sourceTree = "<group>"; };
+		04899533212AB94400F912F9 /* TGNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGNetwork.m; sourceTree = "<group>"; };
+		04899534212AB94400F912F9 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
+		04899535212AB94400F912F9 /* TGNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGNetwork.h; sourceTree = "<group>"; };
+		0489953B212AB9AC00F912F9 /* TGBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGBaseTableViewCell.h; sourceTree = "<group>"; };
+		0489953C212AB9AC00F912F9 /* TGBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGBaseTableViewCell.m; sourceTree = "<group>"; };
 		2A1FFF0321250D5500B7BD09 /* Tcandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tcandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1FFF0621250D5500B7BD09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A1FFF0721250D5500B7BD09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -203,6 +205,26 @@
 			path = CALayer;
 			sourceTree = "<group>";
 		};
+		0489952B212AB8E200F912F9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04899534212AB94400F912F9 /* NullSafe.m */,
+				04899535212AB94400F912F9 /* TGNetwork.h */,
+				04899533212AB94400F912F9 /* TGNetwork.m */,
+				04899532212AB94400F912F9 /* TGUrlsConfigure.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0489953A212AB9AC00F912F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0489953B212AB9AC00F912F9 /* TGBaseTableViewCell.h */,
+				0489953C212AB9AC00F912F9 /* TGBaseTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2A1FFEFA21250D5500B7BD09 = {
 			isa = PBXGroup;
 			children = (
@@ -272,8 +294,8 @@
 		2A1FFF1F2125102900B7BD09 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				0489952B212AB8E200F912F9 /* Network */,
 				A875F5A621251D9900C369C6 /* Save */,
-				A875F5A521251D8C00C369C6 /* Network */,
 				A875F5A421251D7000C369C6 /* Base */,
 				2A1FFF212125105B00B7BD09 /* Const(常量) */,
 				2A1FFF202125105000B7BD09 /* Macros(宏) */,
@@ -475,15 +497,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		2A1FFF672125673700B7BD09 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0468A6A92126C08000191A04 /* TGBaseTableViewCell.h */,
-				0468A6AA2126C08000191A04 /* TGBaseTableViewCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		2A1FFF682125673D00B7BD09 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,21 +564,11 @@
 		A875F5A421251D7000C369C6 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0489953A212AB9AC00F912F9 /* View */,
 				2A1FFF682125673D00B7BD09 /* Model */,
-				2A1FFF672125673700B7BD09 /* View */,
 				2A1FFF662125672600B7BD09 /* Controller */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		A875F5A521251D8C00C369C6 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				04899523212A905F00F912F9 /* TGNetwork.h */,
-				04899524212A905F00F912F9 /* TGNetwork.m */,
-				04899526212AB36900F912F9 /* TGUrlsConfigure.h */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		A875F5A621251D9900C369C6 /* Save */ = {
@@ -715,17 +718,18 @@
 				2A537AE12126A62F0018F5DF /* TGMWalletOrderView.m in Sources */,
 				2A1FFF5B2125640D00B7BD09 /* UIView+LoadXIBView.m in Sources */,
 				2A1FFF1621250D5700B7BD09 /* main.m in Sources */,
+				04899537212AB94400F912F9 /* NullSafe.m in Sources */,
 				2A1FFF0821250D5500B7BD09 /* AppDelegate.m in Sources */,
-				04899525212A905F00F912F9 /* TGNetwork.m in Sources */,
 				A875F5AC21251E5000C369C6 /* TGSaveData.m in Sources */,
 				2A1FFF612125640D00B7BD09 /* NSString+Size.m in Sources */,
 				A875F5A321251CEA00C369C6 /* TGBaseModel.m in Sources */,
 				2A6BA311212A5C1400D4B624 /* TGMHelpOrderView.m in Sources */,
-				0468A6AB2126C08000191A04 /* TGBaseTableViewCell.m in Sources */,
 				2A1FFF2F2125279600B7BD09 /* TGMineController.m in Sources */,
 				2A1FFF6B2125676100B7BD09 /* BaseTableViewController.m in Sources */,
 				0468A6AE2126C2CD00191A04 /* TGHomeSearchBarView.m in Sources */,
 				2A1FFF582125640D00B7BD09 /* UIImage+Color.m in Sources */,
+				0489953D212AB9AC00F912F9 /* TGBaseTableViewCell.m in Sources */,
+				04899536212AB94400F912F9 /* TGNetwork.m in Sources */,
 				A875F59D21251BFE00C369C6 /* TGMainTabBarController.m in Sources */,
 				0464B0AC21257793008F1404 /* TGHomeController.m in Sources */,
 				04899521212A67A800F912F9 /* TGHomeSelectShopKindsCRView.m in Sources */,
