@@ -123,6 +123,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="settingBtn" destination="PZr-9S-u2H" id="swQ-8x-O7e"/>
                 <outlet property="viewHL" destination="0jg-Ra-rSq" id="GOp-y5-c6I"/>
             </connections>
             <point key="canvasLocation" x="235" y="-448"/>
