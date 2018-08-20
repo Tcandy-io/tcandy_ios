@@ -24,6 +24,7 @@ static TGNetwork *networkInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         networkInstance = [[self alloc] init];
+       
     });
     return networkInstance;
 }
