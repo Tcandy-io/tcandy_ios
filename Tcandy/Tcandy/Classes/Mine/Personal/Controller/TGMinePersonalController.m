@@ -8,9 +8,14 @@
 
 #import "TGMinePersonalController.h"
 
-#import "TGMineSettingCell.h"
+#import "TGMinePersonHeadImgCell.h"
+#import "TGMinePersonContentCell.h"
 
-#define KTGMineSettingCellID @"KTGMineSettingCellID"
+#import "TGMineNicknameController.h"
+#import "TGMinePhoneController.h"
+
+#define KTGMinePersonHeadImgCellID @"KTGMinePersonHeadImgCellID"
+#define KTGMinePersonContentCellID @"KTGMinePersonContentCellID"
 
 @interface TGMinePersonalController ()
 
@@ -38,7 +43,9 @@
     self.navigationItem.title = @"个人资料";
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TGMineSettingCell class]) bundle:nil] forCellReuseIdentifier:KTGMineSettingCellID];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TGMinePersonHeadImgCell class]) bundle:nil] forCellReuseIdentifier:KTGMinePersonHeadImgCellID];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TGMinePersonContentCell class]) bundle:nil] forCellReuseIdentifier:KTGMinePersonContentCellID];
+
     
 }
 
@@ -49,31 +56,47 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section == 1) {
-        return 5;
+    if (section == 0) {
+        return 2;
+    }
+    else if (section == 1) {
+        return 4;
     }
     return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    TGMineSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:KTGMineSettingCellID forIndexPath:indexPath];
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        TGMinePersonHeadImgCell *cell = [tableView dequeueReusableCellWithIdentifier:KTGMinePersonHeadImgCellID forIndexPath:indexPath];
+        
+        
+        return cell;
+    }
     
+    TGMinePersonContentCell *cell = [tableView dequeueReusableCellWithIdentifier:KTGMinePersonContentCellID forIndexPath:indexPath];
     if (indexPath.section == 0) {
-        cell.imgStr = @"set_service";
-        cell.nameStr = @"帮助与客服";
+        if (indexPath.row == 1) {
+            cell.desStr = @"昵称";
+            cell.nameStr = @"18777777777";
+        }
     }
     else if (indexPath.section == 1) {
-        NSArray *imgArr = @[@"set_safe",@"set_our",@"set_opinion",@"set_help",@"set_agreement"];
-        NSArray *nameArr = @[@"账户安全",@"关于我们",@"意见反馈",@"帮助中心",@"服务协议"];
+        NSArray *nameArr = @[@"钱包地址",@"手机号",@"邮箱",@"所在地"];
+        cell.desStr = nameArr[indexPath.row];
         
-        cell.imgStr = imgArr[indexPath.row];
-        cell.nameStr = nameArr[indexPath.row];
+        if (indexPath.row == 0) {
+            cell.hasBind = YES;
+        }
+        else if (indexPath.row == 1) {
+            cell.nameStr = @"18777777777";
+        }
+        else if (indexPath.row == 2) {
+            cell.hasBind = YES;
+        }
     }
     else {
-        cell.imgStr = @"set_clear";
-        cell.nameStr = @"清空缓存";
-        cell.hasNextImg = NO;
+        cell.desStr = @"账号关联";
     }
     
     return cell;
@@ -81,37 +104,60 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        return 90;
+    }
     return 54;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if (section == 1) {
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 44)];
+        
+        UILabel *lable = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, Main_Screen_Width - 20, 44)];
+        [view addSubview:lable];
+        lable.text = @"账号";
+        
+        return view;
+    }
+    return nil;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 15;
+    if (section == 1) {
+        return 44;
+    }
+    return 0.01;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    if (section == 2) {
-        return 100;
+    if (section == 1) {
+        return 10;
     }
     else {
-        return 0;
+        return 0.01;
     }
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 100)];
-    
-    UIButton *outBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    outBtn.frame = CGRectMake(10, 15, Main_Screen_Width - 10 * 2, 50);
-    [outBtn setTitle:@"退出登录" forState:0];
-    [outBtn setTitleColor:[UIColor blackColor] forState:0];
-    [outBtn setBackgroundColor:[UIColor whiteColor]];
-    outBtn.titleLabel.font = [UIFont systemFontOfSize:18];
-    [view addSubview:outBtn];
-    
-    return view;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.section == 0) {
+        if (indexPath.row == 1) {
+            TGMineNicknameController *vc = [[TGMineNicknameController alloc]initWithNibName:NSStringFromClass([TGMineNicknameController class]) bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }
+    else if (indexPath.section == 1) {
+        if (indexPath.row == 1) {
+            TGMinePhoneController *vc = [[TGMinePhoneController alloc]initWithNibName:NSStringFromClass([TGMinePhoneController class]) bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        else if (indexPath.row == 2) {
+            TGMinePhoneController *vc = [[TGMinePhoneController alloc]initWithNibName:NSStringFromClass([TGMinePhoneController class]) bundle:nil];
+            vc.isEmail = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }
     
 }
 

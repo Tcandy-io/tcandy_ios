@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TGMineNicknameController">
+            <connections>
+                <outlet property="nameTF" destination="HbQ-eE-dBz" id="Drm-33-uIR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HbQ-eE-dBz">
+                    <rect key="frame" x="10" y="40" width="355" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fyr-Jz-fwp"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20个字符以内,支持中英文、数字、&quot;_&quot;一个中文2个字符" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWe-72-6lm">
+                    <rect key="frame" x="10" y="110" width="355" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HbQ-eE-dBz" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="En5-gR-Ctv"/>
+                <constraint firstItem="HbQ-eE-dBz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="IHR-C9-vAL"/>
+                <constraint firstItem="HWe-72-6lm" firstAttribute="top" secondItem="HbQ-eE-dBz" secondAttribute="bottom" constant="20" id="NVd-Im-Ygg"/>
+                <constraint firstItem="HWe-72-6lm" firstAttribute="trailing" secondItem="HbQ-eE-dBz" secondAttribute="trailing" id="TKg-Ff-szW"/>
+                <constraint firstItem="HWe-72-6lm" firstAttribute="leading" secondItem="HbQ-eE-dBz" secondAttribute="leading" id="Zcv-iz-NYz"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="HbQ-eE-dBz" secondAttribute="trailing" constant="10" id="mqc-Ih-sZA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="80.5"/>
+        </view>
+    </objects>
+</document>
