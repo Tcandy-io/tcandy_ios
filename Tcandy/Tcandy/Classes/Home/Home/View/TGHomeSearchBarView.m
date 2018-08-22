@@ -17,6 +17,7 @@
         [scanBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
         [scanBtn setImageEdgeInsets:UIEdgeInsetsMake(17, 27, 17, 27)];
         scanBtn.frame = CGRectMake(0,kTGStatusBarHeight, 80, 60);
+        scanBtn.tag = 0;
         [self addSubview:scanBtn];
         
         UIView *searchView = [[UIView alloc]initWithFrame:CGRectMake(80, kTGStatusBarHeight+ 12, Main_Screen_Width-160, 35)];
@@ -31,6 +32,7 @@
         [searchBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
         searchBtn.frame = CGRectMake(0,0,301, 35);
         [searchView addSubview:searchBtn];
+        searchBtn.tag = 1;
         [self addSubview:searchView];
         
         UIButton *newBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -38,12 +40,23 @@
         [newBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
         [newBtn setImageEdgeInsets:UIEdgeInsetsMake(17, 27, 17, 27)];
         newBtn.frame = CGRectMake(Main_Screen_Width - 80,kTGStatusBarHeight, 80, 60);
+        newBtn.tag = 2;
         [self addSubview:newBtn];
         
     }
     return self;
 }
 -(void)buttonPressed:(UIButton*)sender{
-    
+    if (sender.tag == 1) {
+        Class class = NSClassFromString(@"TGSearchViewController");
+        if (class != nil) {
+            UINavigationController *lnav = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
+            UIViewController *lvc = [class new];
+            [lnav pushViewController:lvc animated:YES];
+        }
+    }
+    [[TGNetwork shareWNetwork]httpPostPath:kAddressURLStr paras:@{@"act":@"api",@"ctrl":@"getSlides"} complete:^(ResponseStatus status, NSInteger code, id  _Nullable response) {
+        
+    }];
 }
 @end

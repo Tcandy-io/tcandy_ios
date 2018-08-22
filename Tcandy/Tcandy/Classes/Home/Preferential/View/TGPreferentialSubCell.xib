@@ -46,8 +46,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已售19.8万" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFx-Oh-pZ5">
+                                <rect key="frame" x="129" y="25" width="71" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="bMi-c2-2un"/>
+                                    <constraint firstAttribute="height" constant="20" id="yky-4G-bGj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="劵后 ¥ 19.9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AW-uI-Jyp">
-                                <rect key="frame" x="10" y="25" width="94" height="20"/>
+                                <rect key="frame" x="8" y="25" width="113" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="dzj-lz-wNw"/>
                                 </constraints>
@@ -55,26 +65,16 @@
                                 <color key="textColor" red="0.90320819616317749" green="0.19571730494499207" blue="0.47563135623931885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已售19.8万" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFx-Oh-pZ5">
-                                <rect key="frame" x="100" y="25" width="90" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="bMi-c2-2un"/>
-                                    <constraint firstAttribute="height" constant="20" id="yky-4G-bGj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="KFx-Oh-pZ5" secondAttribute="trailing" constant="10" id="2EW-wm-C1E"/>
+                            <constraint firstAttribute="trailing" secondItem="KFx-Oh-pZ5" secondAttribute="trailing" id="2EW-wm-C1E"/>
                             <constraint firstAttribute="bottom" secondItem="2AW-uI-Jyp" secondAttribute="bottom" constant="5" id="PKB-dL-RGA"/>
                             <constraint firstItem="pkj-TW-zRk" firstAttribute="leading" secondItem="y1f-2g-uEp" secondAttribute="leading" constant="40" id="QiJ-K6-xnq"/>
                             <constraint firstItem="pkj-TW-zRk" firstAttribute="top" secondItem="y1f-2g-uEp" secondAttribute="top" constant="2" id="aKH-As-bgJ"/>
-                            <constraint firstItem="KFx-Oh-pZ5" firstAttribute="leading" secondItem="2AW-uI-Jyp" secondAttribute="trailing" constant="-4" id="dNY-lJ-c9L"/>
+                            <constraint firstItem="KFx-Oh-pZ5" firstAttribute="leading" secondItem="2AW-uI-Jyp" secondAttribute="trailing" constant="8" id="dNY-lJ-c9L"/>
                             <constraint firstAttribute="bottom" secondItem="KFx-Oh-pZ5" secondAttribute="bottom" constant="5" id="kcC-Sc-gsE"/>
-                            <constraint firstItem="2AW-uI-Jyp" firstAttribute="leading" secondItem="y1f-2g-uEp" secondAttribute="leading" constant="10" id="qR1-3K-9Gu"/>
+                            <constraint firstItem="2AW-uI-Jyp" firstAttribute="leading" secondItem="y1f-2g-uEp" secondAttribute="leading" constant="8" id="qR1-3K-9Gu"/>
                             <constraint firstAttribute="trailing" secondItem="pkj-TW-zRk" secondAttribute="trailing" constant="5" id="vhv-j9-vWy"/>
                             <constraint firstAttribute="height" constant="50" id="yeB-bB-6D7"/>
                         </constraints>
@@ -94,7 +94,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <size key="customSize" width="200" height="251"/>
-            <point key="canvasLocation" x="-49" y="-34.5"/>
+            <point key="canvasLocation" x="-49" y="-35"/>
         </collectionViewCell>
     </objects>
     <resources>

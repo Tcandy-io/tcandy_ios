@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@protocol TGHomeSectionHeaderViewDelegate<NSObject>
+-(void)selectedShopChannal:(NSString*)name channalCode:(NSInteger)code;
+@end
 @interface TGHomeSectionHeaderView : UITableViewHeaderFooterView
-
+@property(weak,nonatomic) id<TGHomeSectionHeaderViewDelegate> delegate;
 @end

@@ -43,7 +43,8 @@ static TGNetwork *networkInstance = nil;
     response.removesKeysWithNullValues=YES;
     manager.responseSerializer =  [AFHTTPResponseSerializer serializer];//response;
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    
+    [manager.requestSerializer setValue:@"LBS1256" forHTTPHeaderField:@"App_Key"];
+    [manager.requestSerializer setValue:@"a0cc07054f97e8e5f33102dbe42c1ecd" forHTTPHeaderField:@"App_Secret"];
     
     return manager;
 }

@@ -88,8 +88,8 @@
     title_lab.textColor = [UIColor whiteColor];
     [lnavinationBarView addSubview:title_lab];
     
-    back_imgV = [[UIImageView alloc]initWithFrame:CGRectMake(8, 11, 26, 26)];
-    back_imgV.image = [UIImage imageNamed:@"nav_back"];
+    back_imgV = [[UIImageView alloc]initWithFrame:CGRectMake(0, -7, 60, 60)];
+    back_imgV.image = [UIImage imageNamed:@"disttibute_back"];
 //    back_imgV.hidden = YES;
     [lnavinationBarView addSubview:back_imgV];
     
