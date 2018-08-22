@@ -26,8 +26,9 @@
 //创建搜索
 -(UICollectionView*)createCollectionView{
     UICollectionViewFlowLayout *lflowLayout = [[UICollectionViewFlowLayout alloc]init];
-    UICollectionView *lcollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(5,kTGSafeAreaTop, Main_Screen_Width - 10,CGRectGetHeight(self.view.frame)-kTGSafeAreaTop-kTGSafeAreaBottom) collectionViewLayout:lflowLayout];
+    UICollectionView *lcollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(10,kTGSafeAreaTop, Main_Screen_Width - 20,CGRectGetHeight(self.view.frame)-kTGSafeAreaTop-kTGSafeAreaBottom) collectionViewLayout:lflowLayout];
     [self.view addSubview:lcollectionView];
+    lcollectionView.showsVerticalScrollIndicator = NO;
     lcollectionView.backgroundColor = [UIColor whiteColor];
     lcollectionView.delegate = self;
     lcollectionView.dataSource = self;
@@ -49,13 +50,13 @@
     
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake((Main_Screen_Width - 10)/2 , (Main_Screen_Width - 10)/2+50);
+    return CGSizeMake((Main_Screen_Width - 30)/2 , (Main_Screen_Width - 30)/2+50);
 }
 -(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
-    return 0;
+    return 10;
 }
 -(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
-    return 0;
+    return 10;
 }
 
 @end

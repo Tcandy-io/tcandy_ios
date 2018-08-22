@@ -48,7 +48,7 @@
     [self.view addSubview:ltableView];
     
     [ltableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(kStatusBarHeight);
+        make.top.mas_equalTo(-kStatusBarHeight);
         make.left.right.mas_equalTo(0);
         make.bottom.mas_equalTo(-TabBar_HEIGHT);
     }];
@@ -87,7 +87,9 @@
     lshopKindsView.hidden = YES;
     __weak typeof(self) weakSelf = self;
     lshopKindsView.SelectedKinds = ^(NSString *kind) {
-        [weakSelf.m_tableView setContentOffset:CGPointMake(0, kHomeTableViewHeader_H -50)];
+        [UIView animateWithDuration:0.25 animations:^{
+              [weakSelf.m_tableView setContentOffset:CGPointMake(0, kHomeTableViewHeader_H-80 -kStatusBarHeight)];
+        }];
     };
     return lshopKindsView;
 }
@@ -124,7 +126,7 @@
         _m_searchView.backgroundColor = RGBA(235, 35, 123, alpha);
     }
     //
-    if (kHomeTableViewHeader_H < scrollView.contentOffset.y) {
+    if (kHomeTableViewHeader_H < scrollView.contentOffset.y+kStatusBarHeight) {
          _m_shopKindsView.hidden = NO;
     } else {
          _m_shopKindsView.hidden = YES;

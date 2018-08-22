@@ -9,6 +9,7 @@
 #import "TGPreferentialSubViewController.h"
 #import "TGSortBarView.h"
 #import "TGPreferentialSubCell.h"
+#import "TGConfigure.h"
 @interface TGPreferentialSubViewController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
 @property(nonatomic,strong) UICollectionView *m_collectionView;
 @end
@@ -20,19 +21,27 @@
     // Do any additional setup after loading the view.
     _m_collectionView = [self createCollectionView];
     
-    TGSortBarView *lv = [[TGSortBarView alloc]initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 30)];
+    TGSortBarView *lv = [[TGSortBarView alloc]initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 40)];
     [self.view addSubview:lv];
 }
 //创建搜索
 -(UICollectionView*)createCollectionView{
     UICollectionViewFlowLayout *lflowLayout = [[UICollectionViewFlowLayout alloc]init];
-    UICollectionView *lcollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(5,30, Main_Screen_Width - 10,CGRectGetHeight(self.view.frame)-74) collectionViewLayout:lflowLayout];
+    UICollectionView *lcollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:lflowLayout];
     [self.view addSubview:lcollectionView];
+    lcollectionView.showsVerticalScrollIndicator = NO;
     lcollectionView.backgroundColor = [UIColor whiteColor];
     lcollectionView.delegate = self;
     lcollectionView.dataSource = self;
     //
     [lcollectionView registerNib:[UINib nibWithNibName:@"TGPreferentialSubCell" bundle:nil] forCellWithReuseIdentifier:[TGPreferentialSubCell cellIdentifier]];
+    
+    [lcollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(40);
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
+        make.bottom.mas_equalTo(-kTGSafeAreaBottom);
+    }];
     
     return lcollectionView;
 }
@@ -49,12 +58,12 @@
    
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake((Main_Screen_Width - 10)/2 , (Main_Screen_Width - 10)/2+50);
+    return CGSizeMake((Main_Screen_Width - 30)/2 , (Main_Screen_Width - 30)/2+50);
 }
 -(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
-    return 0;
+    return 10;
 }
 -(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
-    return 0;
+    return 10;
 }
 @end

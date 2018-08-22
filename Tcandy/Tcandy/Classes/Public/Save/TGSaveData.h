@@ -12,4 +12,8 @@
 
 //
 +(TGSaveData*)shareTGSaveData;
+//搜索历史
+-(void)saveSearchRecord:(NSString*)record;
+-(void)cleanSearchRecord;
+-(NSArray<NSString*>*)getSearchRecord;
 @end

@@ -12,7 +12,7 @@
 #import "TGSortSelectModel.h"
 
 #define kSortBar_y 0
-#define kSortBar_h 30
+#define kSortBar_h 40
 
 @interface TGSortBarView()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -142,7 +142,7 @@
     if (lcurrentSortM.data.count > 0 && lbtn.selected) {
         selectSortAry = [TGSortSelectModel mj_objectArrayWithKeyValuesArray:lcurrentSortM.data];
         self.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight([self superview].frame));
-        _m_tableView.frame =CGRectMake(0, 30, CGRectGetWidth(self.frame), selectSortAry.count*40);
+        _m_tableView.frame =CGRectMake(0, kSortBar_h, CGRectGetWidth(self.frame), selectSortAry.count*40);
         [_m_tableView reloadData];
     }
 }
