@@ -11,7 +11,7 @@
 #import "TGMDailyCheckHeadView.h"
 #import "TGMDailyCheckAwardCell.h"
 
-#define kDailyCheckHeadViewH 222
+#define kDailyCheckHeadViewH (Main_Screen_Width * 459 / 720)
 #define KTGMDailyCheckAwardCellID @"KTGMDailyCheckAwardCellID"
 
 @interface TGMDailyCheckController ()
@@ -24,8 +24,7 @@
 
 - (TGMDailyCheckHeadView *)headView {
     if (_headView == nil) {
-        _headView = [TGMDailyCheckHeadView loadViewFromXib_ND];
-        _headView.frame = CGRectMake(0, - kDailyCheckHeadViewH, Main_Screen_Width, kDailyCheckHeadViewH);
+        _headView = [[TGMDailyCheckHeadView alloc]initWithFrame: CGRectMake(0, - kDailyCheckHeadViewH, Main_Screen_Width, kDailyCheckHeadViewH)];
         _headView.backgroundColor = random_Color;
     }
     return _headView;
