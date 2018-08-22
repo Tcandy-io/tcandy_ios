@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "TGUrlsConfigure.h"
 //#define YDebug 1
 #ifdef YDebug
 #define kAddressURLStr  @"http://www.weirr.cn"

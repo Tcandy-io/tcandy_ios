@@ -54,6 +54,12 @@
     NSInteger tag = sender.tag;
     currentSelectTag = tag;
     [self updataShopKinds];
+    [self selectedCallback:kShopKindsTitles[currentSelectTag]];
+}
+-(void)selectedCallback:(NSString *)title{
+    if (self.SelectedKinds != nil) {
+        self.SelectedKinds(title);
+    }
 }
 -(void)updataShopKinds{
     for (UIButton *lbtn in _m_shopKindBtns) {
@@ -155,6 +161,8 @@
     currentSelectTag = indexPath.row;
     [self updataShopKinds];
     m_moreBtn.selected = NO;
+    
+     [self selectedCallback:kShopKindsTitles[indexPath.row]];
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     return CGSizeMake((Main_Screen_Width - 40)/4 , 30);

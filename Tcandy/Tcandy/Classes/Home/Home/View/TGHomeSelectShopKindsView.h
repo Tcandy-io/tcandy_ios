@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TGHomeSelectShopKindsView : UIView
-
+@property(copy) void (^SelectedKinds)(NSString *kind);
 @end
 
 @interface TGHomeShopKindsCell:UICollectionViewCell

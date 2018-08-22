@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042BA790212B9E7500A7D18C /* TGScanCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA78F212B9E7500A7D18C /* TGScanCodeViewController.m */; };
+		042BA795212BA4BC00A7D18C /* TGTodayScareBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA794212BA4BC00A7D18C /* TGTodayScareBuyViewController.m */; };
+		042BA7AA212BADA200A7D18C /* NSString+SGPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA79A212BADA200A7D18C /* NSString+SGPagingView.m */; };
+		042BA7AB212BADA200A7D18C /* UIButton+SGPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA79C212BADA200A7D18C /* UIButton+SGPagingView.m */; };
+		042BA7AC212BADA200A7D18C /* UIView+SGPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA79E212BADA200A7D18C /* UIView+SGPagingView.m */; };
+		042BA7AD212BADA200A7D18C /* SGPageContentCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7A1212BADA200A7D18C /* SGPageContentCollectionView.m */; };
+		042BA7AE212BADA200A7D18C /* SGPageContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7A3212BADA200A7D18C /* SGPageContentScrollView.m */; };
+		042BA7AF212BADA200A7D18C /* SGPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7A6212BADA200A7D18C /* SGPageTitleView.m */; };
+		042BA7B0212BADA200A7D18C /* SGPageTitleViewConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7A8212BADA200A7D18C /* SGPageTitleViewConfigure.m */; };
+		042BA7B3212BB43400A7D18C /* TGTodayScareBuySubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7B2212BB43400A7D18C /* TGTodayScareBuySubViewController.m */; };
+		042BA7B9212BB5EC00A7D18C /* TGTodayScareBuySubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7B7212BB5EC00A7D18C /* TGTodayScareBuySubCell.m */; };
+		042BA7BA212BB5EC00A7D18C /* TGTodayScareBuySubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042BA7B8212BB5EC00A7D18C /* TGTodayScareBuySubCell.xib */; };
+		042BA7C0212BBA1E00A7D18C /* TGProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7BF212BBA1E00A7D18C /* TGProgressView.m */; };
+		042BA7C4212BC61000A7D18C /* TGPreferentialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7C3212BC61000A7D18C /* TGPreferentialViewController.m */; };
+		042BA7CB212BDCCE00A7D18C /* TGPreferentialSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7CA212BDCCE00A7D18C /* TGPreferentialSubViewController.m */; };
+		042BA7CD212BDD6100A7D18C /* TGPreferentialSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042BA7CC212BDD6100A7D18C /* TGPreferentialSubViewController.xib */; };
+		042BA7D1212BDF3900A7D18C /* TGSortBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7D0212BDF3900A7D18C /* TGSortBarView.m */; };
+		042BA7D5212C0B7500A7D18C /* TGSortBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7D4212C0B7500A7D18C /* TGSortBarModel.m */; };
+		042BA7D8212C17F900A7D18C /* TGSortSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BA7D7212C17F900A7D18C /* TGSortSelectModel.m */; };
 		0464B0AC21257793008F1404 /* TGHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464B0AB21257793008F1404 /* TGHomeController.m */; };
 		0464B0B421257B80008F1404 /* TGHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464B0B321257B80008F1404 /* TGHomeHeaderView.m */; };
 		0464B0B621257B8B008F1404 /* TGHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0464B0B521257B8B008F1404 /* TGHomeHeaderView.xib */; };
@@ -21,6 +40,13 @@
 		04899536212AB94400F912F9 /* TGNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 04899533212AB94400F912F9 /* TGNetwork.m */; };
 		04899537212AB94400F912F9 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 04899534212AB94400F912F9 /* NullSafe.m */; };
 		0489953D212AB9AC00F912F9 /* TGBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0489953C212AB9AC00F912F9 /* TGBaseTableViewCell.m */; };
+		0489953E212ABD1D00F912F9 /* TGMinePersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA321212AB17F00D4B624 /* TGMinePersonalController.m */; };
+		04F63FDB212CF5C8003A4C81 /* TGBaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F63FDA212CF5C8003A4C81 /* TGBaseCollectionCell.m */; };
+		04F63FDF212CF601003A4C81 /* TGPreferentialSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F63FDD212CF601003A4C81 /* TGPreferentialSubCell.m */; };
+		04F63FE0212CF601003A4C81 /* TGPreferentialSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F63FDE212CF601003A4C81 /* TGPreferentialSubCell.xib */; };
+		04F63FE5212D06E6003A4C81 /* TGHotSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F63FE4212D06E6003A4C81 /* TGHotSearchViewController.m */; };
+		04F63FEA212D0720003A4C81 /* TGHotSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F63FE8212D0720003A4C81 /* TGHotSearchCell.m */; };
+		04F63FEB212D0720003A4C81 /* TGHotSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F63FE9212D0720003A4C81 /* TGHotSearchCell.xib */; };
 		04F6DFF92126D8730014AC07 /* TGMineInvitationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537ADD212677680018F5DF /* TGMineInvitationView.m */; };
 		04F6DFFA2126D8730014AC07 /* TGMOrdeListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE32126A6640018F5DF /* TGMOrdeListView.m */; };
 		2A1FFF0821250D5500B7BD09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FFF0721250D5500B7BD09 /* AppDelegate.m */; };
@@ -48,7 +74,6 @@
 		2A6BA318212A978000D4B624 /* TGMineSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA317212A978000D4B624 /* TGMineSettingController.m */; };
 		2A6BA31C212A9E8F00D4B624 /* TGMineSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA31A212A9E8F00D4B624 /* TGMineSettingCell.m */; };
 		2A6BA31D212A9E8F00D4B624 /* TGMineSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A6BA31B212A9E8F00D4B624 /* TGMineSettingCell.xib */; };
-		2A6BA322212AB17F00D4B624 /* TGMinePersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA321212AB17F00D4B624 /* TGMinePersonalController.m */; };
 		7B88AFE4709E3F5B0B5D88B9 /* libPods-Tcandy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E07777C9CD453442E000CD /* libPods-Tcandy.a */; };
 		A875F59D21251BFE00C369C6 /* TGMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A875F59C21251BFE00C369C6 /* TGMainTabBarController.m */; };
 		A875F5A021251C9200C369C6 /* TGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A875F59F21251C9200C369C6 /* TGBaseViewController.m */; };
@@ -57,6 +82,43 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042BA78E212B9E7500A7D18C /* TGScanCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGScanCodeViewController.h; sourceTree = "<group>"; };
+		042BA78F212B9E7500A7D18C /* TGScanCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGScanCodeViewController.m; sourceTree = "<group>"; };
+		042BA793212BA4BC00A7D18C /* TGTodayScareBuyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGTodayScareBuyViewController.h; sourceTree = "<group>"; };
+		042BA794212BA4BC00A7D18C /* TGTodayScareBuyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGTodayScareBuyViewController.m; sourceTree = "<group>"; };
+		042BA799212BADA200A7D18C /* NSString+SGPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SGPagingView.h"; sourceTree = "<group>"; };
+		042BA79A212BADA200A7D18C /* NSString+SGPagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SGPagingView.m"; sourceTree = "<group>"; };
+		042BA79B212BADA200A7D18C /* UIButton+SGPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SGPagingView.h"; sourceTree = "<group>"; };
+		042BA79C212BADA200A7D18C /* UIButton+SGPagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SGPagingView.m"; sourceTree = "<group>"; };
+		042BA79D212BADA200A7D18C /* UIView+SGPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SGPagingView.h"; sourceTree = "<group>"; };
+		042BA79E212BADA200A7D18C /* UIView+SGPagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SGPagingView.m"; sourceTree = "<group>"; };
+		042BA7A0212BADA200A7D18C /* SGPageContentCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageContentCollectionView.h; sourceTree = "<group>"; };
+		042BA7A1212BADA200A7D18C /* SGPageContentCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPageContentCollectionView.m; sourceTree = "<group>"; };
+		042BA7A2212BADA200A7D18C /* SGPageContentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageContentScrollView.h; sourceTree = "<group>"; };
+		042BA7A3212BADA200A7D18C /* SGPageContentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPageContentScrollView.m; sourceTree = "<group>"; };
+		042BA7A5212BADA200A7D18C /* SGPageTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageTitleView.h; sourceTree = "<group>"; };
+		042BA7A6212BADA200A7D18C /* SGPageTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPageTitleView.m; sourceTree = "<group>"; };
+		042BA7A7212BADA200A7D18C /* SGPageTitleViewConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageTitleViewConfigure.h; sourceTree = "<group>"; };
+		042BA7A8212BADA200A7D18C /* SGPageTitleViewConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPageTitleViewConfigure.m; sourceTree = "<group>"; };
+		042BA7A9212BADA200A7D18C /* SGPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPagingView.h; sourceTree = "<group>"; };
+		042BA7B1212BB43400A7D18C /* TGTodayScareBuySubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGTodayScareBuySubViewController.h; sourceTree = "<group>"; };
+		042BA7B2212BB43400A7D18C /* TGTodayScareBuySubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGTodayScareBuySubViewController.m; sourceTree = "<group>"; };
+		042BA7B6212BB5EC00A7D18C /* TGTodayScareBuySubCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGTodayScareBuySubCell.h; sourceTree = "<group>"; };
+		042BA7B7212BB5EC00A7D18C /* TGTodayScareBuySubCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGTodayScareBuySubCell.m; sourceTree = "<group>"; };
+		042BA7B8212BB5EC00A7D18C /* TGTodayScareBuySubCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGTodayScareBuySubCell.xib; sourceTree = "<group>"; };
+		042BA7BE212BBA1E00A7D18C /* TGProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGProgressView.h; sourceTree = "<group>"; };
+		042BA7BF212BBA1E00A7D18C /* TGProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGProgressView.m; sourceTree = "<group>"; };
+		042BA7C2212BC61000A7D18C /* TGPreferentialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGPreferentialViewController.h; sourceTree = "<group>"; };
+		042BA7C3212BC61000A7D18C /* TGPreferentialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGPreferentialViewController.m; sourceTree = "<group>"; };
+		042BA7C9212BDCCE00A7D18C /* TGPreferentialSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGPreferentialSubViewController.h; sourceTree = "<group>"; };
+		042BA7CA212BDCCE00A7D18C /* TGPreferentialSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGPreferentialSubViewController.m; sourceTree = "<group>"; };
+		042BA7CC212BDD6100A7D18C /* TGPreferentialSubViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGPreferentialSubViewController.xib; sourceTree = "<group>"; };
+		042BA7CF212BDF3900A7D18C /* TGSortBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSortBarView.h; sourceTree = "<group>"; };
+		042BA7D0212BDF3900A7D18C /* TGSortBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSortBarView.m; sourceTree = "<group>"; };
+		042BA7D3212C0B7500A7D18C /* TGSortBarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSortBarModel.h; sourceTree = "<group>"; };
+		042BA7D4212C0B7500A7D18C /* TGSortBarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSortBarModel.m; sourceTree = "<group>"; };
+		042BA7D6212C17F900A7D18C /* TGSortSelectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSortSelectModel.h; sourceTree = "<group>"; };
+		042BA7D7212C17F900A7D18C /* TGSortSelectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSortSelectModel.m; sourceTree = "<group>"; };
 		0464B0AA21257793008F1404 /* TGHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeController.h; sourceTree = "<group>"; };
 		0464B0AB21257793008F1404 /* TGHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHomeController.m; sourceTree = "<group>"; };
 		0464B0B221257B80008F1404 /* TGHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHomeHeaderView.h; sourceTree = "<group>"; };
@@ -83,6 +145,16 @@
 		04899535212AB94400F912F9 /* TGNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGNetwork.h; sourceTree = "<group>"; };
 		0489953B212AB9AC00F912F9 /* TGBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGBaseTableViewCell.h; sourceTree = "<group>"; };
 		0489953C212AB9AC00F912F9 /* TGBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGBaseTableViewCell.m; sourceTree = "<group>"; };
+		04F63FD9212CF5C8003A4C81 /* TGBaseCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGBaseCollectionCell.h; sourceTree = "<group>"; };
+		04F63FDA212CF5C8003A4C81 /* TGBaseCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGBaseCollectionCell.m; sourceTree = "<group>"; };
+		04F63FDC212CF601003A4C81 /* TGPreferentialSubCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGPreferentialSubCell.h; sourceTree = "<group>"; };
+		04F63FDD212CF601003A4C81 /* TGPreferentialSubCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGPreferentialSubCell.m; sourceTree = "<group>"; };
+		04F63FDE212CF601003A4C81 /* TGPreferentialSubCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGPreferentialSubCell.xib; sourceTree = "<group>"; };
+		04F63FE3212D06E6003A4C81 /* TGHotSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHotSearchViewController.h; sourceTree = "<group>"; };
+		04F63FE4212D06E6003A4C81 /* TGHotSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHotSearchViewController.m; sourceTree = "<group>"; };
+		04F63FE7212D0720003A4C81 /* TGHotSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGHotSearchCell.h; sourceTree = "<group>"; };
+		04F63FE8212D0720003A4C81 /* TGHotSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGHotSearchCell.m; sourceTree = "<group>"; };
+		04F63FE9212D0720003A4C81 /* TGHotSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGHotSearchCell.xib; sourceTree = "<group>"; };
 		2A1FFF0321250D5500B7BD09 /* Tcandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tcandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1FFF0621250D5500B7BD09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A1FFF0721250D5500B7BD09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -161,6 +233,163 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042BA78C212B9DD000A7D18C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0464B0A921257719008F1404 /* Model */,
+				0464B0A821257705008F1404 /* View */,
+				0464B0A7212576EF008F1404 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		042BA78D212B9DF600A7D18C /* ScanCode */ = {
+			isa = PBXGroup;
+			children = (
+				042BA78E212B9E7500A7D18C /* TGScanCodeViewController.h */,
+				042BA78F212B9E7500A7D18C /* TGScanCodeViewController.m */,
+			);
+			path = ScanCode;
+			sourceTree = "<group>";
+		};
+		042BA792212BA0C900A7D18C /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				042BA7B5212BB47500A7D18C /* View */,
+				042BA7B4212BB46600A7D18C /* Controller */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		042BA796212BAD6B00A7D18C /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				042BA797212BADA200A7D18C /* SGPagingView */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		042BA797212BADA200A7D18C /* SGPagingView */ = {
+			isa = PBXGroup;
+			children = (
+				042BA798212BADA200A7D18C /* Category */,
+				042BA79F212BADA200A7D18C /* SGPageContent */,
+				042BA7A4212BADA200A7D18C /* SGPageTitle */,
+				042BA7A9212BADA200A7D18C /* SGPagingView.h */,
+			);
+			path = SGPagingView;
+			sourceTree = "<group>";
+		};
+		042BA798212BADA200A7D18C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				042BA799212BADA200A7D18C /* NSString+SGPagingView.h */,
+				042BA79A212BADA200A7D18C /* NSString+SGPagingView.m */,
+				042BA79B212BADA200A7D18C /* UIButton+SGPagingView.h */,
+				042BA79C212BADA200A7D18C /* UIButton+SGPagingView.m */,
+				042BA79D212BADA200A7D18C /* UIView+SGPagingView.h */,
+				042BA79E212BADA200A7D18C /* UIView+SGPagingView.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		042BA79F212BADA200A7D18C /* SGPageContent */ = {
+			isa = PBXGroup;
+			children = (
+				042BA7A0212BADA200A7D18C /* SGPageContentCollectionView.h */,
+				042BA7A1212BADA200A7D18C /* SGPageContentCollectionView.m */,
+				042BA7A2212BADA200A7D18C /* SGPageContentScrollView.h */,
+				042BA7A3212BADA200A7D18C /* SGPageContentScrollView.m */,
+			);
+			path = SGPageContent;
+			sourceTree = "<group>";
+		};
+		042BA7A4212BADA200A7D18C /* SGPageTitle */ = {
+			isa = PBXGroup;
+			children = (
+				042BA7A5212BADA200A7D18C /* SGPageTitleView.h */,
+				042BA7A6212BADA200A7D18C /* SGPageTitleView.m */,
+				042BA7A7212BADA200A7D18C /* SGPageTitleViewConfigure.h */,
+				042BA7A8212BADA200A7D18C /* SGPageTitleViewConfigure.m */,
+			);
+			path = SGPageTitle;
+			sourceTree = "<group>";
+		};
+		042BA7B4212BB46600A7D18C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				042BA793212BA4BC00A7D18C /* TGTodayScareBuyViewController.h */,
+				042BA794212BA4BC00A7D18C /* TGTodayScareBuyViewController.m */,
+				042BA7B1212BB43400A7D18C /* TGTodayScareBuySubViewController.h */,
+				042BA7B2212BB43400A7D18C /* TGTodayScareBuySubViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		042BA7B5212BB47500A7D18C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				042BA7B6212BB5EC00A7D18C /* TGTodayScareBuySubCell.h */,
+				042BA7B7212BB5EC00A7D18C /* TGTodayScareBuySubCell.m */,
+				042BA7B8212BB5EC00A7D18C /* TGTodayScareBuySubCell.xib */,
+				042BA7BE212BBA1E00A7D18C /* TGProgressView.h */,
+				042BA7BF212BBA1E00A7D18C /* TGProgressView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		042BA7C1212BC53D00A7D18C /* Preferential */ = {
+			isa = PBXGroup;
+			children = (
+				042BA7C6212BDB7C00A7D18C /* View */,
+				042BA7C5212BDB6200A7D18C /* Controller */,
+			);
+			path = Preferential;
+			sourceTree = "<group>";
+		};
+		042BA7C5212BDB6200A7D18C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				042BA7C2212BC61000A7D18C /* TGPreferentialViewController.h */,
+				042BA7C3212BC61000A7D18C /* TGPreferentialViewController.m */,
+				042BA7C9212BDCCE00A7D18C /* TGPreferentialSubViewController.h */,
+				042BA7CA212BDCCE00A7D18C /* TGPreferentialSubViewController.m */,
+				042BA7CC212BDD6100A7D18C /* TGPreferentialSubViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		042BA7C6212BDB7C00A7D18C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F63FDC212CF601003A4C81 /* TGPreferentialSubCell.h */,
+				04F63FDD212CF601003A4C81 /* TGPreferentialSubCell.m */,
+				04F63FDE212CF601003A4C81 /* TGPreferentialSubCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		042BA7CE212BDEE500A7D18C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				042BA7D2212C0B4400A7D18C /* SortBarView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		042BA7D2212C0B4400A7D18C /* SortBarView */ = {
+			isa = PBXGroup;
+			children = (
+				042BA7CF212BDF3900A7D18C /* TGSortBarView.h */,
+				042BA7D0212BDF3900A7D18C /* TGSortBarView.m */,
+				042BA7D3212C0B7500A7D18C /* TGSortBarModel.h */,
+				042BA7D4212C0B7500A7D18C /* TGSortBarModel.m */,
+				042BA7D6212C17F900A7D18C /* TGSortSelectModel.h */,
+				042BA7D7212C17F900A7D18C /* TGSortSelectModel.m */,
+			);
+			path = SortBarView;
+			sourceTree = "<group>";
+		};
 		0464B0A7212576EF008F1404 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +453,36 @@
 			children = (
 				0489953B212AB9AC00F912F9 /* TGBaseTableViewCell.h */,
 				0489953C212AB9AC00F912F9 /* TGBaseTableViewCell.m */,
+				04F63FD9212CF5C8003A4C81 /* TGBaseCollectionCell.h */,
+				04F63FDA212CF5C8003A4C81 /* TGBaseCollectionCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04F63FE1212D06AA003A4C81 /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				04F63FE6212D0704003A4C81 /* View */,
+				04F63FE2212D06B8003A4C81 /* Controller */,
+			);
+			path = Hot;
+			sourceTree = "<group>";
+		};
+		04F63FE2212D06B8003A4C81 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04F63FE3212D06E6003A4C81 /* TGHotSearchViewController.h */,
+				04F63FE4212D06E6003A4C81 /* TGHotSearchViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04F63FE6212D0704003A4C81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F63FE7212D0720003A4C81 /* TGHotSearchCell.h */,
+				04F63FE8212D0720003A4C81 /* TGHotSearchCell.m */,
+				04F63FE9212D0720003A4C81 /* TGHotSearchCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +516,7 @@
 		2A1FFF1C21250F1400B7BD09 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				042BA796212BAD6B00A7D18C /* ThirdParty */,
 				A875F59A21251B2A00C369C6 /* Home */,
 				2A1FFF23212510CA00B7BD09 /* Source(资源) */,
 				2A1FFF1F2125102900B7BD09 /* Public */,
@@ -297,6 +557,7 @@
 		2A1FFF1F2125102900B7BD09 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				042BA7CE212BDEE500A7D18C /* Common */,
 				0489952B212AB8E200F912F9 /* Network */,
 				A875F5A621251D9900C369C6 /* Save */,
 				A875F5A421251D7000C369C6 /* Base */,
@@ -574,9 +835,11 @@
 		A875F59A21251B2A00C369C6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0464B0A921257719008F1404 /* Model */,
-				0464B0A821257705008F1404 /* View */,
-				0464B0A7212576EF008F1404 /* Controller */,
+				04F63FE1212D06AA003A4C81 /* Hot */,
+				042BA7C1212BC53D00A7D18C /* Preferential */,
+				042BA792212BA0C900A7D18C /* Today */,
+				042BA78D212B9DF600A7D18C /* ScanCode */,
+				042BA78C212B9DD000A7D18C /* Home */,
 				0468A6A02126AFA500191A04 /* TGConfigure.h */,
 			);
 			path = Home;
@@ -671,12 +934,16 @@
 				2A6BA31D212A9E8F00D4B624 /* TGMineSettingCell.xib in Resources */,
 				2A1FFF1321250D5600B7BD09 /* LaunchScreen.storyboard in Resources */,
 				2A1FFF652125658F00B7BD09 /* TGMineHeadView.xib in Resources */,
+				042BA7BA212BB5EC00A7D18C /* TGTodayScareBuySubCell.xib in Resources */,
+				04F63FE0212CF601003A4C81 /* TGPreferentialSubCell.xib in Resources */,
 				2A1FFF282125188000B7BD09 /* Public.xcassets in Resources */,
 				2A1FFF1021250D5600B7BD09 /* Assets.xcassets in Resources */,
 				2A1FFF0E21250D5500B7BD09 /* Main.storyboard in Resources */,
 				0468A6A82126BA0300191A04 /* TGHomeCell.xib in Resources */,
+				04F63FEB212D0720003A4C81 /* TGHotSearchCell.xib in Resources */,
 				0464B0B621257B8B008F1404 /* TGHomeHeaderView.xib in Resources */,
 				04899522212A67A800F912F9 /* TGHomeSelectShopKindsCRView.xib in Resources */,
+				042BA7CD212BDD6100A7D18C /* TGPreferentialSubViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,43 +995,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0489953E212ABD1D00F912F9 /* TGMinePersonalController.m in Sources */,
 				04F6DFF92126D8730014AC07 /* TGMineInvitationView.m in Sources */,
+				04F63FE5212D06E6003A4C81 /* TGHotSearchViewController.m in Sources */,
+				042BA7C0212BBA1E00A7D18C /* TGProgressView.m in Sources */,
 				04F6DFFA2126D8730014AC07 /* TGMOrdeListView.m in Sources */,
 				2A1FFF592125640D00B7BD09 /* UIImage+Extensions.m in Sources */,
 				2A1FFF332125638500B7BD09 /* TGMineHeadView.m in Sources */,
 				0468A6B12126D25600191A04 /* TGHomeSelectShopKindsView.m in Sources */,
 				2A1FFF0B21250D5500B7BD09 /* ViewController.m in Sources */,
 				2A6BA31C212A9E8F00D4B624 /* TGMineSettingCell.m in Sources */,
+				042BA7AA212BADA200A7D18C /* NSString+SGPagingView.m in Sources */,
+				042BA7AF212BADA200A7D18C /* SGPageTitleView.m in Sources */,
 				2A537AE72126A69E0018F5DF /* TGMUpdateOrderView.m in Sources */,
+				042BA7AD212BADA200A7D18C /* SGPageContentCollectionView.m in Sources */,
+				04F63FEA212D0720003A4C81 /* TGHotSearchCell.m in Sources */,
 				2A537AE12126A62F0018F5DF /* TGMWalletOrderView.m in Sources */,
 				2A1FFF5B2125640D00B7BD09 /* UIView+LoadXIBView.m in Sources */,
 				2A1FFF1621250D5700B7BD09 /* main.m in Sources */,
 				04899537212AB94400F912F9 /* NullSafe.m in Sources */,
 				2A1FFF0821250D5500B7BD09 /* AppDelegate.m in Sources */,
-
 				A875F5AC21251E5000C369C6 /* TGSaveData.m in Sources */,
+				042BA790212B9E7500A7D18C /* TGScanCodeViewController.m in Sources */,
+				042BA7AC212BADA200A7D18C /* UIView+SGPagingView.m in Sources */,
 				2A1FFF612125640D00B7BD09 /* NSString+Size.m in Sources */,
 				A875F5A321251CEA00C369C6 /* TGBaseModel.m in Sources */,
+				042BA795212BA4BC00A7D18C /* TGTodayScareBuyViewController.m in Sources */,
+				042BA7B9212BB5EC00A7D18C /* TGTodayScareBuySubCell.m in Sources */,
 				2A6BA311212A5C1400D4B624 /* TGMHelpOrderView.m in Sources */,
+				042BA7C4212BC61000A7D18C /* TGPreferentialViewController.m in Sources */,
 				2A1FFF2F2125279600B7BD09 /* TGMineController.m in Sources */,
 				2A1FFF6B2125676100B7BD09 /* BaseTableViewController.m in Sources */,
+				042BA7D1212BDF3900A7D18C /* TGSortBarView.m in Sources */,
 				0468A6AE2126C2CD00191A04 /* TGHomeSearchBarView.m in Sources */,
+				042BA7AB212BADA200A7D18C /* UIButton+SGPagingView.m in Sources */,
 				2A1FFF582125640D00B7BD09 /* UIImage+Color.m in Sources */,
+				042BA7AE212BADA200A7D18C /* SGPageContentScrollView.m in Sources */,
 				0489953D212AB9AC00F912F9 /* TGBaseTableViewCell.m in Sources */,
 				04899536212AB94400F912F9 /* TGNetwork.m in Sources */,
 				A875F59D21251BFE00C369C6 /* TGMainTabBarController.m in Sources */,
 				0464B0AC21257793008F1404 /* TGHomeController.m in Sources */,
 				04899521212A67A800F912F9 /* TGHomeSelectShopKindsCRView.m in Sources */,
+				042BA7B0212BADA200A7D18C /* SGPageTitleViewConfigure.m in Sources */,
+				04F63FDF212CF601003A4C81 /* TGPreferentialSubCell.m in Sources */,
+				04F63FDB212CF5C8003A4C81 /* TGBaseCollectionCell.m in Sources */,
+				042BA7B3212BB43400A7D18C /* TGTodayScareBuySubViewController.m in Sources */,
 				2A1FFF5D2125640D00B7BD09 /* UITextView+Placeholder.m in Sources */,
 				2A1FFF6E2125687B00B7BD09 /* BaseNavigationController.m in Sources */,
 				2A1FFF5F2125640D00B7BD09 /* NSString+RegexCategory.m in Sources */,
 				0464B0B421257B80008F1404 /* TGHomeHeaderView.m in Sources */,
 				2A6BA318212A978000D4B624 /* TGMineSettingController.m in Sources */,
+				042BA7D8212C17F900A7D18C /* TGSortSelectModel.m in Sources */,
 				0468A6A72126BA0300191A04 /* TGHomeCell.m in Sources */,
 				A875F5A021251C9200C369C6 /* TGBaseViewController.m in Sources */,
+				042BA7CB212BDCCE00A7D18C /* TGPreferentialSubViewController.m in Sources */,
 				2A1FFF5E2125640D00B7BD09 /* UIBarButtonItem+CT.m in Sources */,
 				0464B0BB21266B5C008F1404 /* CALayer+UIColor.m in Sources */,
 				0468A6A32126B16000191A04 /* TGHomeSectionHeaderView.m in Sources */,
+				042BA7D5212C0B7500A7D18C /* TGSortBarModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

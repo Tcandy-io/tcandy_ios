@@ -15,7 +15,7 @@
         UIButton *scanBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [scanBtn setImage:[UIImage imageNamed:@"home_scan"] forState:UIControlStateNormal];
         [scanBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        [scanBtn setImageEdgeInsets:UIEdgeInsetsMake(15, 25, 15, 25)];
+        [scanBtn setImageEdgeInsets:UIEdgeInsetsMake(17, 27, 17, 27)];
         scanBtn.frame = CGRectMake(0,kTGStatusBarHeight, 80, 60);
         [self addSubview:scanBtn];
         
@@ -36,7 +36,7 @@
         UIButton *newBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [newBtn setImage:[UIImage imageNamed:@"home_new"] forState:UIControlStateNormal];
         [newBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        [newBtn setImageEdgeInsets:UIEdgeInsetsMake(15, 25, 15, 25)];
+        [newBtn setImageEdgeInsets:UIEdgeInsetsMake(17, 27, 17, 27)];
         newBtn.frame = CGRectMake(Main_Screen_Width - 80,kTGStatusBarHeight, 80, 60);
         [self addSubview:newBtn];
         

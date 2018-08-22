@@ -14,7 +14,7 @@
 #import "TGHomeSelectShopKindsView.h"
 
 #import "TGNetwork.h"
-#define  kHomeTableViewHeader_H  450
+#define  kHomeTableViewHeader_H  440
 
 @interface TGHomeController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -29,6 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self hideNavigationView:YES];
+    
     _m_tableView =  [self createTableView];
     _m_tableView.tableHeaderView = [self createTableViewHeaderView];
     [self createTableViewSectionView];
@@ -37,10 +39,6 @@
     _m_searchView = [self createSearchBarView];
     _m_shopKindsView = [self createShopKindsView];
     self.navigationController.navigationBarHidden = YES;
-    
-    [[TGNetwork shareWNetwork]httpPostPath:@"?act=api&ctrl=getpic" paras:@{@"act":@"api",@"ctrl":@"getpic"} complete:^(ResponseStatus status, NSInteger code, id  _Nullable response) {
-        
-    }];
 }
 //创建tableView
 -(UITableView*)createTableView{
@@ -77,16 +75,20 @@
 }
 //搜索栏
 -(UIView*)createSearchBarView{
-    TGHomeSearchBarView *lsearchView = [[TGHomeSearchBarView alloc] initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 80)];
+    TGHomeSearchBarView *lsearchView = [[TGHomeSearchBarView alloc] initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 60+kStatusBarHeight)];
     lsearchView.backgroundColor = UIColor.clearColor;
     [self.view addSubview:lsearchView];
     return lsearchView;
 }
 //商品种类
 -(TGHomeSelectShopKindsView*)createShopKindsView{
-    TGHomeSelectShopKindsView *lshopKindsView = [[TGHomeSelectShopKindsView alloc]initWithFrame:CGRectMake(0, 80, Main_Screen_Width, 50)];
+    TGHomeSelectShopKindsView *lshopKindsView = [[TGHomeSelectShopKindsView alloc]initWithFrame:CGRectMake(0, 60+kStatusBarHeight, Main_Screen_Width, 50)];
     [self.view addSubview:lshopKindsView];
     lshopKindsView.hidden = YES;
+    __weak typeof(self) weakSelf = self;
+    lshopKindsView.SelectedKinds = ^(NSString *kind) {
+        [weakSelf.m_tableView setContentOffset:CGPointMake(0, kHomeTableViewHeader_H -50)];
+    };
     return lshopKindsView;
 }
 

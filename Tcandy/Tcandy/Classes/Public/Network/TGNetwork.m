@@ -47,6 +47,7 @@ static TGNetwork *networkInstance = nil;
     
     return manager;
 }
+
 -(id)OCObjectWithUTF8:(id _Nullable)data{
     NSLog(@"----%@",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
     if (data != nil) {
@@ -60,7 +61,7 @@ static TGNetwork *networkInstance = nil;
 }
 
 -(void)httpGetPath:(NSString*)path paras:(NSDictionary*)paras complete:(void(^)(ResponseStatus status,NSInteger code, id  _Nullable response))completeBlock{
-    NSString *lurlStr = [NSString stringWithFormat:@"%@/%@",kAddressURLStr,path];
+    NSString *lurlStr = [NSString stringWithFormat:@"%@",path];
     if (paras == nil) {
         return;
     }
@@ -81,7 +82,7 @@ static TGNetwork *networkInstance = nil;
     
 }
 -(void)httpPostReturnImageDataPath:(NSString*)path paras:(NSDictionary*)paras complete:(void(^)(ResponseStatus status,NSInteger code, id  _Nullable response))completeBlock{
-    NSString *lurlStr = [NSString stringWithFormat:@"%@/%@",kAddressURLStr,path];
+    NSString *lurlStr = [NSString stringWithFormat:@"%@",path];
     [sessionManager POST:lurlStr parameters:paras progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (responseObject != nil ) {
             completeBlock(ResponseStatusSuccess,200,responseObject);
@@ -94,7 +95,7 @@ static TGNetwork *networkInstance = nil;
     }];
 }
 -(void)httpPostPath:(NSString*)path paras:(NSDictionary*)paras complete:(void(^)(ResponseStatus status, NSInteger code,id  _Nullable response))completeBlock{
-    NSString *lurlStr = [NSString stringWithFormat:@"%@/%@",kAddressURLStr,path];
+    NSString *lurlStr = [NSString stringWithFormat:@"%@",path];
     [sessionManager POST:lurlStr parameters:paras progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *lresponse=nil;
         lresponse = [self OCObjectWithUTF8:responseObject];

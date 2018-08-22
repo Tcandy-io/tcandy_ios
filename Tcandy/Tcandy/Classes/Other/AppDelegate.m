@@ -17,8 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     TGMainTabBarController *tabBarController = [TGMainTabBarController new];
-    self.window.rootViewController = tabBarController;
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:tabBarController];
+    [nav.navigationBar setHidden:YES];
+    self.window.rootViewController = nav;
     
     return YES;
 }
