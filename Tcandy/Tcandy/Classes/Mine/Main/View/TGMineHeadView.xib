@@ -123,7 +123,9 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="dayBtn" destination="voB-d6-Prm" id="Km7-Zb-X5h"/>
                 <outlet property="headBtn" destination="MDW-pN-HXw" id="jx3-PN-CN9"/>
+                <outlet property="messageBtn" destination="Osl-oL-Azv" id="djS-AY-Jfy"/>
                 <outlet property="settingBtn" destination="PZr-9S-u2H" id="swQ-8x-O7e"/>
                 <outlet property="viewHL" destination="0jg-Ra-rSq" id="GOp-y5-c6I"/>
             </connections>

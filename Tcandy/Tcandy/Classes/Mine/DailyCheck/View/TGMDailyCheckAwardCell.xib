@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="TGMDailyCheckAwardCell">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 0.6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uic-up-MJe">
+                        <rect key="frame" x="285" y="58" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Lyl-0K-Rh9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.92941176469999998" green="0.1333333333" blue="0.40000000000000002" alpha="0.70547945209999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign_coin" translatesAutoresizingMaskIntoConstraints="NO" id="lsP-AG-4Kp">
+                        <rect key="frame" x="267" y="57" width="18" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="J4Q-cq-Ikc"/>
+                            <constraint firstAttribute="width" secondItem="lsP-AG-4Kp" secondAttribute="height" multiplier="39:46" id="MwV-Q9-e94"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUG-FV-XER">
+                        <rect key="frame" x="10" y="10" width="35" height="58.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-08-15 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0a-9j-FDj">
+                        <rect key="frame" x="10" y="68.5" width="86.5" height="58"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="U0a-9j-FDj" firstAttribute="top" secondItem="dUG-FV-XER" secondAttribute="bottom" id="4N7-iR-hbL"/>
+                    <constraint firstItem="uic-up-MJe" firstAttribute="leading" secondItem="lsP-AG-4Kp" secondAttribute="trailing" id="5df-8N-tT3"/>
+                    <constraint firstItem="lsP-AG-4Kp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8UR-lz-qDW"/>
+                    <constraint firstItem="U0a-9j-FDj" firstAttribute="leading" secondItem="dUG-FV-XER" secondAttribute="leading" id="AEo-qY-1z0"/>
+                    <constraint firstItem="dUG-FV-XER" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="HuJ-Cc-vVZ"/>
+                    <constraint firstItem="U0a-9j-FDj" firstAttribute="height" secondItem="dUG-FV-XER" secondAttribute="height" id="KGe-cr-AcZ"/>
+                    <constraint firstAttribute="bottom" secondItem="U0a-9j-FDj" secondAttribute="bottom" constant="10" id="XfH-gq-qkA"/>
+                    <constraint firstItem="dUG-FV-XER" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fuH-a0-wPK"/>
+                    <constraint firstItem="uic-up-MJe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lKk-QS-2x9"/>
+                    <constraint firstAttribute="trailing" secondItem="uic-up-MJe" secondAttribute="trailing" constant="10" id="rR9-Tk-8PN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="28.5" y="68.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sign_coin" width="39" height="46"/>
+    </resources>
+</document>

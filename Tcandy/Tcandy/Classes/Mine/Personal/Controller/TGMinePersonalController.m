@@ -13,6 +13,7 @@
 
 #import "TGMineNicknameController.h"
 #import "TGMinePhoneController.h"
+#import "TGMAccountBindController.h"
 
 #define KTGMinePersonHeadImgCellID @"KTGMinePersonHeadImgCellID"
 #define KTGMinePersonContentCellID @"KTGMinePersonContentCellID"
@@ -46,7 +47,6 @@
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TGMinePersonHeadImgCell class]) bundle:nil] forCellReuseIdentifier:KTGMinePersonHeadImgCellID];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TGMinePersonContentCell class]) bundle:nil] forCellReuseIdentifier:KTGMinePersonContentCellID];
 
-    
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
@@ -158,9 +158,11 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
     }
-    
+    else if (indexPath.section == 2) {
+        TGMAccountBindController *vc = [[TGMAccountBindController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
-
 
 
 @end
