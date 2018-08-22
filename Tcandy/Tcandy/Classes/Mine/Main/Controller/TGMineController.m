@@ -17,6 +17,7 @@
 
 #import "TGMinePersonalController.h"
 #import "TGMineSettingController.h"
+#import "TGMineWalletController.h"
 
 #define KOrderHeight 60
 
@@ -61,6 +62,8 @@
 - (TGMWalletOrderView *)walletView {
     if (_walletView == nil) {
         _walletView = [[TGMWalletOrderView alloc]initWithFrame:CGRectMake(10, 0, Main_Screen_Width - 20, KOrderHeight + 90)];
+        [_walletView addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(goToWalletController)]];
+
     }
     return _walletView;
 }
@@ -119,6 +122,11 @@
 }
 
 #pragma mark - method
+
+- (void)goToWalletController {
+    TGMineWalletController *vc = [[TGMineWalletController alloc]initWithNibName:NSStringFromClass([TGMineWalletController class]) bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)goToPersonalController {
     TGMinePersonalController *vc = [[TGMinePersonalController alloc]init];
