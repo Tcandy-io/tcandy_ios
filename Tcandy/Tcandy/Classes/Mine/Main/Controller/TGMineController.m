@@ -18,6 +18,8 @@
 #import "TGMinePersonalController.h"
 #import "TGMineSettingController.h"
 #import "TGMineWalletController.h"
+#import "TGMineMessageController.h"
+#import "TGMDailyCheckController.h"
 
 #define KOrderHeight 60
 
@@ -81,6 +83,8 @@
         _headView.frame = CGRectMake(0, 0, Main_Screen_Width, 300);
         [_headView.settingBtn addTarget:self action:@selector(goToSetting) forControlEvents:UIControlEventTouchUpInside];
         [_headView.headBtn addTarget:self action:@selector(goToPersonalController) forControlEvents:UIControlEventTouchUpInside];
+        [_headView.messageBtn addTarget:self action:@selector(goToMessageController) forControlEvents:UIControlEventTouchUpInside];
+        [_headView.dayBtn addTarget:self action:@selector(goToDailyCheckController) forControlEvents:UIControlEventTouchUpInside];
     }
     return _headView;
 }
@@ -122,6 +126,16 @@
 }
 
 #pragma mark - method
+
+- (void)goToDailyCheckController {
+    TGMDailyCheckController *vc = [[TGMDailyCheckController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)goToMessageController {
+    TGMineMessageController *vc = [[TGMineMessageController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)goToWalletController {
     TGMineWalletController *vc = [[TGMineWalletController alloc]initWithNibName:NSStringFromClass([TGMineWalletController class]) bundle:nil];

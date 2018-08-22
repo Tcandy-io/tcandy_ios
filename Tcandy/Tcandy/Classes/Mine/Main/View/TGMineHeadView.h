@@ -13,6 +13,8 @@
 @interface TGMineHeadView : UIView
 
 @property (weak, nonatomic) IBOutlet UIButton *settingBtn;
+@property (weak, nonatomic) IBOutlet UIButton *messageBtn;
+@property (weak, nonatomic) IBOutlet UIButton *dayBtn;
 
 @property (weak, nonatomic) IBOutlet UIButton *headBtn;
 

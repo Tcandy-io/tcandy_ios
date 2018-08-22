@@ -1,23 +1,22 @@
 //
-//  TGMAccountBindCell.m
+//  TGMineMessageCell.m
 //  Tcandy
 //
-//  Created by 陈彤 on 2018/8/21.
+//  Created by 陈彤 on 2018/8/22.
 //  Copyright © 2018年 tcandy. All rights reserved.
 //
 
-#import "TGMAccountBindCell.h"
+#import "TGMineMessageCell.h"
 
-@interface TGMAccountBindCell ()
+@interface TGMineMessageCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *headImgV;
 @property (weak, nonatomic) IBOutlet UILabel *nameLab;
-@property (weak, nonatomic) IBOutlet UILabel *statusLab;
-
+@property (weak, nonatomic) IBOutlet UILabel *desLab;
 
 @end
 
-@implementation TGMAccountBindCell
+@implementation TGMineMessageCell
 
 - (void)setImgStr:(NSString *)imgStr {
     _imgStr = imgStr;
@@ -25,10 +24,16 @@
     self.headImgV.image = [UIImage imageNamed:imgStr];
 }
 
-- (void)setNameStr:(NSString *)nameStr{
+- (void)setNameStr:(NSString *)nameStr {
     _nameStr = nameStr;
     
     self.nameLab.text = nameStr;
+}
+
+- (void)setDesStr:(NSString *)desStr {
+    _desStr = desStr;
+    
+    self.desLab.text = desStr;
 }
 
 - (void)awakeFromNib {
