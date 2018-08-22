@@ -19,8 +19,8 @@
 #define NAVI_HEIGHT ((Main_Screen_Height == 812.0) ? 88.0 : 64.0)
 #define TabBar_HEIGHT ((Main_Screen_Height == 812.0) ? 83.0 : 49.0)
 
-#define KScaleX (Main_Screen_Width/414.0)
-#define KScaleY (Main_Screen_Height/736.0)
+#define KScaleX (Main_Screen_Width/375.0)
+#define KScaleY (Main_Screen_Height/667.0)
 
 //色值
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]

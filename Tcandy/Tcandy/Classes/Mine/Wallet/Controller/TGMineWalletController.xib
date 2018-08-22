@@ -13,7 +13,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TGMineWalletController">
             <connections>
+                <outlet property="bottomBtnY" destination="IbA-sP-GVo" id="Cay-tV-NZj"/>
                 <outlet property="firstBtn" destination="73d-P2-54z" id="rMc-9u-LrY"/>
+                <outlet property="firstBtnH" destination="NWg-CB-Ipm" id="wVq-EI-MM6"/>
                 <outlet property="secondBtn" destination="b4B-gp-NiQ" id="3sE-Xh-gTO"/>
                 <outlet property="thirdBtn" destination="LpX-gR-I14" id="0Ua-ue-rSi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -37,6 +39,9 @@
                         <constraint firstAttribute="width" secondItem="DBd-SV-M1z" secondAttribute="height" multiplier="5:9" id="d74-Mv-WkV"/>
                     </constraints>
                     <state key="normal" backgroundImage="mine_wallet_back"/>
+                    <connections>
+                        <action selector="backBtnClicked:" destination="-1" eventType="touchUpInside" id="XP5-PP-bZy"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的钱包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8Y-lu-Ckq">
                     <rect key="frame" x="152.5" y="35" width="70" height="21"/>
@@ -72,9 +77,6 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4B-gp-NiQ">
                     <rect key="frame" x="20" y="329" width="335" height="80"/>
                     <color key="backgroundColor" red="0.97647058823529409" green="0.32156862745098036" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="80" id="9q0-5G-NH5"/>
-                    </constraints>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_wallet_next" translatesAutoresizingMaskIntoConstraints="NO" id="3dX-JT-IRF">
                     <rect key="frame" x="330" y="361" width="10" height="17"/>
@@ -98,9 +100,6 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpX-gR-I14">
                     <rect key="frame" x="20" y="424" width="335" height="80"/>
                     <color key="backgroundColor" red="0.99215686274509807" green="0.44705882352941173" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="80" id="fdX-OG-3Jm"/>
-                    </constraints>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcW-uH-Gph">
                     <rect key="frame" x="285" y="453" width="35" height="21"/>
@@ -147,14 +146,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laM-iO-xbS">
-                    <rect key="frame" x="197.5" y="554" width="147.5" height="46"/>
+                    <rect key="frame" x="197.5" y="548" width="147.5" height="46"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="提币" backgroundImage="mine_wallet_btn_bg">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlB-K5-J6t">
-                    <rect key="frame" x="30" y="554" width="147.5" height="46"/>
+                    <rect key="frame" x="30" y="548" width="147.5" height="46"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="nlB-K5-J6t" secondAttribute="height" multiplier="282:88" id="aWY-C9-ddz"/>
                     </constraints>
@@ -178,13 +177,15 @@
                 <constraint firstItem="LpX-gR-I14" firstAttribute="top" secondItem="b4B-gp-NiQ" secondAttribute="bottom" constant="15" id="FUi-dp-OC2"/>
                 <constraint firstItem="laM-iO-xbS" firstAttribute="width" secondItem="nlB-K5-J6t" secondAttribute="width" id="GbS-om-iz1"/>
                 <constraint firstItem="laM-iO-xbS" firstAttribute="centerY" secondItem="nlB-K5-J6t" secondAttribute="centerY" id="H9f-sJ-j7V"/>
-                <constraint firstItem="nlB-K5-J6t" firstAttribute="top" secondItem="LpX-gR-I14" secondAttribute="bottom" constant="50" id="IbA-sP-GVo"/>
+                <constraint firstItem="nlB-K5-J6t" firstAttribute="top" secondItem="LpX-gR-I14" secondAttribute="bottom" constant="44" id="IbA-sP-GVo"/>
                 <constraint firstItem="3dX-JT-IRF" firstAttribute="width" secondItem="3dX-JT-IRF" secondAttribute="height" multiplier="17:30" id="Ifn-iv-Srg"/>
                 <constraint firstItem="b4B-gp-NiQ" firstAttribute="leading" secondItem="73d-P2-54z" secondAttribute="leading" id="Ihc-Il-QbY"/>
                 <constraint firstItem="4SO-dV-4vV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jo3-LS-IVE"/>
+                <constraint firstItem="LpX-gR-I14" firstAttribute="height" secondItem="b4B-gp-NiQ" secondAttribute="height" id="Ky1-PO-oCL"/>
                 <constraint firstItem="rcW-uH-Gph" firstAttribute="trailing" secondItem="HEv-ct-kWD" secondAttribute="trailing" id="Las-z5-nhh"/>
                 <constraint firstItem="l5a-ro-bJZ" firstAttribute="leading" secondItem="PbL-9r-aWl" secondAttribute="leading" id="M0k-ev-uJo"/>
                 <constraint firstItem="IZp-DT-u0H" firstAttribute="centerY" secondItem="LpX-gR-I14" secondAttribute="centerY" id="MRx-Fa-2yd"/>
+                <constraint firstItem="b4B-gp-NiQ" firstAttribute="height" secondItem="73d-P2-54z" secondAttribute="height" id="MWe-1G-HPb"/>
                 <constraint firstItem="iC1-US-aO2" firstAttribute="leading" secondItem="l5a-ro-bJZ" secondAttribute="leading" id="NNl-s0-xJj"/>
                 <constraint firstItem="1YF-Ux-lx9" firstAttribute="centerX" secondItem="4SO-dV-4vV" secondAttribute="centerX" id="R11-pR-pDo"/>
                 <constraint firstItem="Vc9-rS-1ci" firstAttribute="centerY" secondItem="u8Y-lu-Ckq" secondAttribute="centerY" id="Rqu-em-Jy9"/>
