@@ -41,6 +41,19 @@
 		04899537212AB94400F912F9 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 04899534212AB94400F912F9 /* NullSafe.m */; };
 		0489953D212AB9AC00F912F9 /* TGBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0489953C212AB9AC00F912F9 /* TGBaseTableViewCell.m */; };
 		0489953E212ABD1D00F912F9 /* TGMinePersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA321212AB17F00D4B624 /* TGMinePersonalController.m */; };
+		04D4601E212D112E008FD9BA /* TGMAccountBindCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D46015212D112E008FD9BA /* TGMAccountBindCell.m */; };
+		04D4601F212D112E008FD9BA /* TGMAccountBindCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D46016212D112E008FD9BA /* TGMAccountBindCell.xib */; };
+		04D46020212D112E008FD9BA /* TGMinePersonHeadImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D46019212D112E008FD9BA /* TGMinePersonHeadImgCell.m */; };
+		04D46021212D112E008FD9BA /* TGMinePersonContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D4601A212D112E008FD9BA /* TGMinePersonContentCell.m */; };
+		04D46022212D112E008FD9BA /* TGMinePersonContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D4601C212D112E008FD9BA /* TGMinePersonContentCell.xib */; };
+		04D46023212D112E008FD9BA /* TGMinePersonHeadImgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D4601D212D112E008FD9BA /* TGMinePersonHeadImgCell.xib */; };
+		04D46029212D1147008FD9BA /* TGMineWalletController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D46027212D1147008FD9BA /* TGMineWalletController.m */; };
+		04D4602A212D1147008FD9BA /* TGMineWalletController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D46028212D1147008FD9BA /* TGMineWalletController.xib */; };
+		04D46033212D117F008FD9BA /* TGMinePhoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D4602C212D117E008FD9BA /* TGMinePhoneController.m */; };
+		04D46034212D117F008FD9BA /* TGMineNicknameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D4602F212D117E008FD9BA /* TGMineNicknameController.m */; };
+		04D46035212D117F008FD9BA /* TGMineNicknameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D46030212D117E008FD9BA /* TGMineNicknameController.xib */; };
+		04D46036212D117F008FD9BA /* TGMinePhoneController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D46031212D117F008FD9BA /* TGMinePhoneController.xib */; };
+		04D46037212D117F008FD9BA /* TGMAccountBindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D46032212D117F008FD9BA /* TGMAccountBindController.m */; };
 		04F63FDB212CF5C8003A4C81 /* TGBaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F63FDA212CF5C8003A4C81 /* TGBaseCollectionCell.m */; };
 		04F63FDF212CF601003A4C81 /* TGPreferentialSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F63FDD212CF601003A4C81 /* TGPreferentialSubCell.m */; };
 		04F63FE0212CF601003A4C81 /* TGPreferentialSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F63FDE212CF601003A4C81 /* TGPreferentialSubCell.xib */; };
@@ -145,6 +158,26 @@
 		04899535212AB94400F912F9 /* TGNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGNetwork.h; sourceTree = "<group>"; };
 		0489953B212AB9AC00F912F9 /* TGBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGBaseTableViewCell.h; sourceTree = "<group>"; };
 		0489953C212AB9AC00F912F9 /* TGBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGBaseTableViewCell.m; sourceTree = "<group>"; };
+		04D46015212D112E008FD9BA /* TGMAccountBindCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGMAccountBindCell.m; sourceTree = "<group>"; };
+		04D46016212D112E008FD9BA /* TGMAccountBindCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGMAccountBindCell.xib; sourceTree = "<group>"; };
+		04D46017212D112E008FD9BA /* TGMAccountBindCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGMAccountBindCell.h; sourceTree = "<group>"; };
+		04D46018212D112E008FD9BA /* TGMinePersonContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGMinePersonContentCell.h; sourceTree = "<group>"; };
+		04D46019212D112E008FD9BA /* TGMinePersonHeadImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGMinePersonHeadImgCell.m; sourceTree = "<group>"; };
+		04D4601A212D112E008FD9BA /* TGMinePersonContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGMinePersonContentCell.m; sourceTree = "<group>"; };
+		04D4601B212D112E008FD9BA /* TGMinePersonHeadImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGMinePersonHeadImgCell.h; sourceTree = "<group>"; };
+		04D4601C212D112E008FD9BA /* TGMinePersonContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGMinePersonContentCell.xib; sourceTree = "<group>"; };
+		04D4601D212D112E008FD9BA /* TGMinePersonHeadImgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGMinePersonHeadImgCell.xib; sourceTree = "<group>"; };
+		04D46026212D1147008FD9BA /* TGMineWalletController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGMineWalletController.h; sourceTree = "<group>"; };
+		04D46027212D1147008FD9BA /* TGMineWalletController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGMineWalletController.m; sourceTree = "<group>"; };
+		04D46028212D1147008FD9BA /* TGMineWalletController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGMineWalletController.xib; sourceTree = "<group>"; };
+		04D4602B212D117E008FD9BA /* TGMAccountBindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGMAccountBindController.h; sourceTree = "<group>"; };
+		04D4602C212D117E008FD9BA /* TGMinePhoneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGMinePhoneController.m; sourceTree = "<group>"; };
+		04D4602D212D117E008FD9BA /* TGMinePhoneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGMinePhoneController.h; sourceTree = "<group>"; };
+		04D4602E212D117E008FD9BA /* TGMineNicknameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGMineNicknameController.h; sourceTree = "<group>"; };
+		04D4602F212D117E008FD9BA /* TGMineNicknameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGMineNicknameController.m; sourceTree = "<group>"; };
+		04D46030212D117E008FD9BA /* TGMineNicknameController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGMineNicknameController.xib; sourceTree = "<group>"; };
+		04D46031212D117F008FD9BA /* TGMinePhoneController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGMinePhoneController.xib; sourceTree = "<group>"; };
+		04D46032212D117F008FD9BA /* TGMAccountBindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGMAccountBindController.m; sourceTree = "<group>"; };
 		04F63FD9212CF5C8003A4C81 /* TGBaseCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGBaseCollectionCell.h; sourceTree = "<group>"; };
 		04F63FDA212CF5C8003A4C81 /* TGBaseCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGBaseCollectionCell.m; sourceTree = "<group>"; };
 		04F63FDC212CF601003A4C81 /* TGPreferentialSubCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGPreferentialSubCell.h; sourceTree = "<group>"; };
@@ -459,6 +492,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		04D46024212D1147008FD9BA /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				04D46025212D1147008FD9BA /* Controller */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		04D46025212D1147008FD9BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04D46026212D1147008FD9BA /* TGMineWalletController.h */,
+				04D46027212D1147008FD9BA /* TGMineWalletController.m */,
+				04D46028212D1147008FD9BA /* TGMineWalletController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		04F63FE1212D06AA003A4C81 /* Hot */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,6 +652,7 @@
 		2A1FFF29212526E500B7BD09 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				04D46024212D1147008FD9BA /* Wallet */,
 				2A6BA313212A95AB00D4B624 /* Personal */,
 				2A6BA312212A95A200D4B624 /* Setting */,
 				2A1FFF2B2125275800B7BD09 /* Main */,
@@ -812,6 +864,14 @@
 			children = (
 				2A6BA320212AB17F00D4B624 /* TGMinePersonalController.h */,
 				2A6BA321212AB17F00D4B624 /* TGMinePersonalController.m */,
+				04D4602B212D117E008FD9BA /* TGMAccountBindController.h */,
+				04D46032212D117F008FD9BA /* TGMAccountBindController.m */,
+				04D4602E212D117E008FD9BA /* TGMineNicknameController.h */,
+				04D4602F212D117E008FD9BA /* TGMineNicknameController.m */,
+				04D46030212D117E008FD9BA /* TGMineNicknameController.xib */,
+				04D4602D212D117E008FD9BA /* TGMinePhoneController.h */,
+				04D4602C212D117E008FD9BA /* TGMinePhoneController.m */,
+				04D46031212D117F008FD9BA /* TGMinePhoneController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -819,6 +879,15 @@
 		2A6BA31F212AB13B00D4B624 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04D46017212D112E008FD9BA /* TGMAccountBindCell.h */,
+				04D46015212D112E008FD9BA /* TGMAccountBindCell.m */,
+				04D46016212D112E008FD9BA /* TGMAccountBindCell.xib */,
+				04D46018212D112E008FD9BA /* TGMinePersonContentCell.h */,
+				04D4601A212D112E008FD9BA /* TGMinePersonContentCell.m */,
+				04D4601C212D112E008FD9BA /* TGMinePersonContentCell.xib */,
+				04D4601B212D112E008FD9BA /* TGMinePersonHeadImgCell.h */,
+				04D46019212D112E008FD9BA /* TGMinePersonHeadImgCell.m */,
+				04D4601D212D112E008FD9BA /* TGMinePersonHeadImgCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -932,17 +1001,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6BA31D212A9E8F00D4B624 /* TGMineSettingCell.xib in Resources */,
+				04D4601F212D112E008FD9BA /* TGMAccountBindCell.xib in Resources */,
 				2A1FFF1321250D5600B7BD09 /* LaunchScreen.storyboard in Resources */,
+				04D46035212D117F008FD9BA /* TGMineNicknameController.xib in Resources */,
 				2A1FFF652125658F00B7BD09 /* TGMineHeadView.xib in Resources */,
 				042BA7BA212BB5EC00A7D18C /* TGTodayScareBuySubCell.xib in Resources */,
 				04F63FE0212CF601003A4C81 /* TGPreferentialSubCell.xib in Resources */,
+				04D4602A212D1147008FD9BA /* TGMineWalletController.xib in Resources */,
+				04D46023212D112E008FD9BA /* TGMinePersonHeadImgCell.xib in Resources */,
 				2A1FFF282125188000B7BD09 /* Public.xcassets in Resources */,
+				04D46022212D112E008FD9BA /* TGMinePersonContentCell.xib in Resources */,
 				2A1FFF1021250D5600B7BD09 /* Assets.xcassets in Resources */,
 				2A1FFF0E21250D5500B7BD09 /* Main.storyboard in Resources */,
 				0468A6A82126BA0300191A04 /* TGHomeCell.xib in Resources */,
 				04F63FEB212D0720003A4C81 /* TGHotSearchCell.xib in Resources */,
 				0464B0B621257B8B008F1404 /* TGHomeHeaderView.xib in Resources */,
 				04899522212A67A800F912F9 /* TGHomeSelectShopKindsCRView.xib in Resources */,
+				04D46036212D117F008FD9BA /* TGMinePhoneController.xib in Resources */,
 				042BA7CD212BDD6100A7D18C /* TGPreferentialSubViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -999,6 +1074,7 @@
 				04F6DFF92126D8730014AC07 /* TGMineInvitationView.m in Sources */,
 				04F63FE5212D06E6003A4C81 /* TGHotSearchViewController.m in Sources */,
 				042BA7C0212BBA1E00A7D18C /* TGProgressView.m in Sources */,
+				04D46029212D1147008FD9BA /* TGMineWalletController.m in Sources */,
 				04F6DFFA2126D8730014AC07 /* TGMOrdeListView.m in Sources */,
 				2A1FFF592125640D00B7BD09 /* UIImage+Extensions.m in Sources */,
 				2A1FFF332125638500B7BD09 /* TGMineHeadView.m in Sources */,
@@ -1024,10 +1100,12 @@
 				042BA7B9212BB5EC00A7D18C /* TGTodayScareBuySubCell.m in Sources */,
 				2A6BA311212A5C1400D4B624 /* TGMHelpOrderView.m in Sources */,
 				042BA7C4212BC61000A7D18C /* TGPreferentialViewController.m in Sources */,
+				04D46021212D112E008FD9BA /* TGMinePersonContentCell.m in Sources */,
 				2A1FFF2F2125279600B7BD09 /* TGMineController.m in Sources */,
 				2A1FFF6B2125676100B7BD09 /* BaseTableViewController.m in Sources */,
 				042BA7D1212BDF3900A7D18C /* TGSortBarView.m in Sources */,
 				0468A6AE2126C2CD00191A04 /* TGHomeSearchBarView.m in Sources */,
+				04D46034212D117F008FD9BA /* TGMineNicknameController.m in Sources */,
 				042BA7AB212BADA200A7D18C /* UIButton+SGPagingView.m in Sources */,
 				2A1FFF582125640D00B7BD09 /* UIImage+Color.m in Sources */,
 				042BA7AE212BADA200A7D18C /* SGPageContentScrollView.m in Sources */,
@@ -1050,9 +1128,13 @@
 				A875F5A021251C9200C369C6 /* TGBaseViewController.m in Sources */,
 				042BA7CB212BDCCE00A7D18C /* TGPreferentialSubViewController.m in Sources */,
 				2A1FFF5E2125640D00B7BD09 /* UIBarButtonItem+CT.m in Sources */,
+				04D4601E212D112E008FD9BA /* TGMAccountBindCell.m in Sources */,
 				0464B0BB21266B5C008F1404 /* CALayer+UIColor.m in Sources */,
 				0468A6A32126B16000191A04 /* TGHomeSectionHeaderView.m in Sources */,
+				04D46037212D117F008FD9BA /* TGMAccountBindController.m in Sources */,
+				04D46020212D112E008FD9BA /* TGMinePersonHeadImgCell.m in Sources */,
 				042BA7D5212C0B7500A7D18C /* TGSortBarModel.m in Sources */,
+				04D46033212D117F008FD9BA /* TGMinePhoneController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
