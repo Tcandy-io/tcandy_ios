@@ -13,7 +13,6 @@
 @interface TGTodayScareBuyViewController ()<SGPageTitleViewDelegate, SGPageContentCollectionViewDelegate>
 @property (nonatomic, strong) SGPageTitleView *pageTitleView;
 @property (nonatomic, strong) SGPageContentCollectionView *pageContentCollectionView;
-
 @end
 
 @implementation TGTodayScareBuyViewController

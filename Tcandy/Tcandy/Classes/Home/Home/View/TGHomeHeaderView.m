@@ -31,7 +31,7 @@
     return self;
 }
 -(void)loadAds:(NSArray*)adGroup{
-    _cycleScrollView.localizationImageNamesGroup  = @[@"apply_adv"];
+    _cycleScrollView.localizationImageNamesGroup  = @[@"apply_adv",@"popup_good"];
 }
 -(void)requestUrl{
     [[TGNetwork shareWNetwork]httpPostPath:[banner stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]] paras:nil complete:^(ResponseStatus status, NSInteger code, id  _Nullable response) {
@@ -46,9 +46,9 @@
         {
             Class class = NSClassFromString(@"TGTodayScareBuyViewController");
             if (class != nil) {
-            UINavigationController *lnav = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
+            UIViewController *lnav = (UINavigationController*)[self viewControllerSupportView:self];
                 UIViewController *lvc = [class new];
-                [lnav pushViewController:lvc animated:YES];
+                [lnav.navigationController pushViewController:lvc animated:YES];
             }
         }
             break;
@@ -57,9 +57,9 @@
         {
             Class class = NSClassFromString(@"TGPreferentialViewController");
             if (class != nil) {
-                UINavigationController *lnav = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
+                 UIViewController *lnav = (UINavigationController*)[self viewControllerSupportView:self];
                 UIViewController *lvc = ((id (*)(id, SEL,id))objc_msgSend)(class,NSSelectorFromString(@"createViewControllerWithValue:"),@"聚划算");//
-                [lnav pushViewController:lvc animated:YES];
+                [lnav.navigationController pushViewController:lvc animated:YES];
             }
         }
             break;
@@ -68,9 +68,9 @@
         {
             Class class = NSClassFromString(@"TGPreferentialViewController");
             if (class != nil) {
-                UINavigationController *lnav = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
+                UIViewController *lnav = (UINavigationController*)[self viewControllerSupportView:self];
                 UIViewController *lvc = ((id (*)(id, SEL,id))objc_msgSend)(class,NSSelectorFromString(@"createViewControllerWithValue:"),@"九块九");//
-                [lnav pushViewController:lvc animated:YES];
+                [lnav.navigationController pushViewController:lvc animated:YES];
             }
         }
             break;
@@ -79,9 +79,9 @@
         {
             Class class = NSClassFromString(@"TGHotSearchViewController");
             if (class != nil) {
-                UINavigationController *lnav = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
+                UIViewController *lnav = (UINavigationController*)[self viewControllerSupportView:self];
                 UIViewController *lvc = [class new];
-                [lnav pushViewController:lvc animated:YES];
+                [lnav.navigationController pushViewController:lvc animated:YES];
             }
         }
             break;
@@ -89,5 +89,14 @@
         default:
             break;
     }
+}
+- (UIViewController *)viewControllerSupportView:(UIView *)view {
+    for (UIView* next = [view superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
 }
 @end

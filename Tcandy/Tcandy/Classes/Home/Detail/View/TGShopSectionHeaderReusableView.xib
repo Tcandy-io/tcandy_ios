@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kShopSectionHeader" id="U6b-Vx-4bR" customClass="TGShopSectionHeaderReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="详情" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fty-P1-93e">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fty-P1-93e" firstAttribute="trailing" secondItem="9Gg-ye-v9C" secondAttribute="trailing" id="DbP-M2-ytJ"/>
+                <constraint firstItem="fty-P1-93e" firstAttribute="bottom" secondItem="9Gg-ye-v9C" secondAttribute="bottom" id="IaC-P6-ZfC"/>
+                <constraint firstItem="fty-P1-93e" firstAttribute="top" secondItem="9Gg-ye-v9C" secondAttribute="top" id="JMZ-6H-A4X"/>
+                <constraint firstItem="fty-P1-93e" firstAttribute="leading" secondItem="9Gg-ye-v9C" secondAttribute="leading" id="qev-wU-i8N"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Gg-ye-v9C"/>
+            <connections>
+                <outlet property="headerTitle_lab" destination="fty-P1-93e" id="Si5-gl-R2J"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="67"/>
+        </collectionReusableView>
+    </objects>
+</document>

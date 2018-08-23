@@ -38,7 +38,9 @@
     
     _m_searchView = [self createSearchBarView];
     _m_shopKindsView = [self createShopKindsView];
-    self.navigationController.navigationBarHidden = YES;
+}
+-(void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBar.hidden = YES;
 }
 //创建tableView
 -(UITableView*)createTableView{
@@ -116,6 +118,13 @@
     UIView *lsectionheader = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"kSectionIdentify"];
     return lsectionheader;
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    Class class = NSClassFromString(@"TGShopDetailViewController");
+    if (class != nil) {
+        [self.navigationController pushViewController:[class new] animated:YES];
+    }
+}
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat alpha =scrollView.contentOffset.y/200.0;
     if (alpha <= 0) {
@@ -133,14 +142,6 @@
     }
     
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

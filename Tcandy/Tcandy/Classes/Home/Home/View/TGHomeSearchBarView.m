@@ -26,11 +26,15 @@
         [searchView.layer setBorderWidth:1];
         [searchView.layer setCornerRadius:17.5];
         searchView.clipsToBounds =  YES;
+        UIImageView *lsearchMarkView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 7, 25, 25)];
+        lsearchMarkView.image = [UIImage imageNamed:@"edit_search"];
+        [searchView addSubview:lsearchMarkView];
+        
         UIButton *searchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *searchImage = [UIImage imageNamed:@"home_search"];
-        [searchBtn setBackgroundImage:searchImage forState:UIControlStateNormal];
         [searchBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        searchBtn.frame = CGRectMake(0,0,301, 35);
+        [searchBtn setTitle:@"请输入关键字" forState:UIControlStateNormal];
+        [searchBtn setTitleColor:UIColor.grayColor forState:UIControlStateNormal];
+        searchBtn.frame = CGRectMake(0,0,CGRectGetWidth(searchView.frame), CGRectGetHeight(searchView.frame));
         [searchView addSubview:searchBtn];
         searchBtn.tag = 1;
         [self addSubview:searchView];
@@ -50,13 +54,30 @@
     if (sender.tag == 1) {
         Class class = NSClassFromString(@"TGSearchViewController");
         if (class != nil) {
-            UINavigationController *lnav = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
+        UIViewController *lnav = (UINavigationController*)[self viewControllerSupportView:self];
+        UIViewController *lvc = [class new];
+        [lnav.navigationController pushViewController:lvc animated:YES];
+        }
+    }else if (sender.tag == 2){
+        Class class = NSClassFromString(@"TGMineMessageController");
+        if (class != nil) {
+            UIViewController *lnav = (UINavigationController*)[self viewControllerSupportView:self];
             UIViewController *lvc = [class new];
-            [lnav pushViewController:lvc animated:YES];
+            lnav.navigationController.navigationBar.hidden = NO;
+            [lnav.navigationController pushViewController:lvc animated:YES];
         }
     }
     [[TGNetwork shareWNetwork]httpPostPath:kAddressURLStr paras:@{@"act":@"api",@"ctrl":@"getSlides"} complete:^(ResponseStatus status, NSInteger code, id  _Nullable response) {
         
     }];
+}
+- (UIViewController *)viewControllerSupportView:(UIView *)view {
+    for (UIView* next = [view superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
 }
 @end

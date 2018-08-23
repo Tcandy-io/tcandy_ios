@@ -19,4 +19,5 @@
 #define kTGSafeAreaTop  ((([[UIScreen mainScreen] bounds].size.height == 812.0)) ?  88.0 : 64.0)
 #define kTGSafeAreaTabBarBottom  ((([[UIScreen mainScreen] bounds].size.height == 812.0)) ?  83.0 : 49.0)
 #define kTGSafeAreaBottom  ((([[UIScreen mainScreen] bounds].size.height == 812.0)) ?  34.0 : 0)
+#define kMoneyUnit @"TCA"
 #endif /* TGConfigure_h */

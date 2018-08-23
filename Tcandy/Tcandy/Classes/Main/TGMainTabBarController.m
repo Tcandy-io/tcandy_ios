@@ -21,8 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self addController:@"TGMineController" image:nil selectImage:nil];
-    [self addController:@"TGHomeController" image:nil selectImage:nil];
+    [self addController:@"TGMineController" image:@"" selectImage:@""];
+    [self addController:@"TGHomeController" image:@"" selectImage:@""];
 
 }
 

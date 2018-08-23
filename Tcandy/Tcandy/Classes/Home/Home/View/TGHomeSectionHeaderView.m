@@ -16,6 +16,7 @@
 @property(nonatomic,strong) NSMutableArray<UIButton*> *shopBtns;
 @property(nonatomic,strong) UIView *btmMark_view;
 @property(nonatomic,strong) UIButton *selectedBtn;
+@property(nonatomic,strong) NSArray *titles;
 @end
 
 @implementation TGHomeSectionHeaderView
@@ -33,6 +34,7 @@
     }
     return self;
 }
+
 -(void)initUI{
     _shopBtns = [NSMutableArray array];
     //
