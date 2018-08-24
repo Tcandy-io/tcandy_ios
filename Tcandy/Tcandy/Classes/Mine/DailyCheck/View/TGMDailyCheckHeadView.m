@@ -10,12 +10,22 @@
 
 @implementation TGMDailyCheckHeadView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setSubViews];
+    }
+    return self;
 }
-*/
+
+- (void)setSubViews {
+    
+    UIImageView *bgImgV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"sign_day_bj"]];
+    bgImgV.frame = self.bounds;
+    
+    [self addSubview:bgImgV];
+    
+}
 
 @end

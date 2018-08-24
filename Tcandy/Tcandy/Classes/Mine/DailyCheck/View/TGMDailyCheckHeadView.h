@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "UIView+LoadXIBView.h"
-
 @interface TGMDailyCheckHeadView : UIView
 
 @end

@@ -103,7 +103,6 @@
 		2A51E2AA212D5AC600391B06 /* TGMDailyCheckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51E2A9212D5AC600391B06 /* TGMDailyCheckController.m */; };
 		2A51E2AF212D5F9300391B06 /* TGMDailyCheckAwardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51E2AD212D5F9300391B06 /* TGMDailyCheckAwardCell.m */; };
 		2A51E2B4212D640C00391B06 /* TGMDailyCheckHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51E2B3212D640C00391B06 /* TGMDailyCheckHeadView.m */; };
-		2A51E2B6212D641400391B06 /* TGMDailyCheckHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A51E2B5212D641400391B06 /* TGMDailyCheckHeadView.xib */; };
 		2A51E2B8212D69CA00391B06 /* TGMDailyCheckAwardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A51E2B7212D69CA00391B06 /* TGMDailyCheckAwardCell.xib */; };
 		2A537AE12126A62F0018F5DF /* TGMWalletOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE02126A62F0018F5DF /* TGMWalletOrderView.m */; };
 		2A537AE72126A69E0018F5DF /* TGMUpdateOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A537AE62126A69E0018F5DF /* TGMUpdateOrderView.m */; };
@@ -284,7 +283,6 @@
 		2A51E2AD212D5F9300391B06 /* TGMDailyCheckAwardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMDailyCheckAwardCell.m; sourceTree = "<group>"; };
 		2A51E2B2212D640C00391B06 /* TGMDailyCheckHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMDailyCheckHeadView.h; sourceTree = "<group>"; };
 		2A51E2B3212D640C00391B06 /* TGMDailyCheckHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMDailyCheckHeadView.m; sourceTree = "<group>"; };
-		2A51E2B5212D641400391B06 /* TGMDailyCheckHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TGMDailyCheckHeadView.xib; sourceTree = "<group>"; };
 		2A51E2B7212D69CA00391B06 /* TGMDailyCheckAwardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGMDailyCheckAwardCell.xib; sourceTree = "<group>"; };
 		2A537ADC212677680018F5DF /* TGMineInvitationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGMineInvitationView.h; sourceTree = "<group>"; };
 		2A537ADD212677680018F5DF /* TGMineInvitationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGMineInvitationView.m; sourceTree = "<group>"; };
@@ -995,7 +993,6 @@
 				2A51E2B7212D69CA00391B06 /* TGMDailyCheckAwardCell.xib */,
 				2A51E2B2212D640C00391B06 /* TGMDailyCheckHeadView.h */,
 				2A51E2B3212D640C00391B06 /* TGMDailyCheckHeadView.m */,
-				2A51E2B5212D641400391B06 /* TGMDailyCheckHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
