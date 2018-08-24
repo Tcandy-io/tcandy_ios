@@ -10,4 +10,6 @@
 
 @interface TGMDailyCheckHeadView : UIView
 
+@property (nonatomic,assign) NSString *dayStr;
+
 @end

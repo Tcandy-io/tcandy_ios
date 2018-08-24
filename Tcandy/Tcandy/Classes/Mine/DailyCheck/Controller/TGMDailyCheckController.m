@@ -25,7 +25,7 @@
 - (TGMDailyCheckHeadView *)headView {
     if (_headView == nil) {
         _headView = [[TGMDailyCheckHeadView alloc]initWithFrame: CGRectMake(0, - kDailyCheckHeadViewH, Main_Screen_Width, kDailyCheckHeadViewH)];
-        _headView.backgroundColor = random_Color;
+        _headView.dayStr = @"2";
     }
     return _headView;
 }

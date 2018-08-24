@@ -36,4 +36,17 @@
 //背景颜色
 #define kBackgroundColor [UIColor colorWithRed:245/255.0f green:245/255.0f blue:245/255.0f alpha:1]
 
+#pragma mark - 字体
+
+// 字体大小(常规/粗体)
+#define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:FONTSIZE]
+#define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
+#define FONT(NAME, FONTSIZE)    [UIFont fontWithName:(NAME) size:(FONTSIZE)]
+
+//不同屏幕尺寸字体适配
+#define AdaptedWidth(x)  ceilf((x) * KScaleX)
+#define AdaptedHeight(x) ceilf((x) * KScaleY)
+
+#define SYSTEM_AdaptedFont(R) SYSTEMFONT(AdaptedWidth(R))
+
 #endif /* Macros_h */
